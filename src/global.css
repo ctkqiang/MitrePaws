@@ -1,0 +1,27 @@
+/* Web 端高度链：让 Tabs 的 flex:1 始终锚定视口高度，底栏才能真正停靠在视口底部。 */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+}
+
+/* Web 端输入框聚焦环统一为品牌樱花粉，避免浏览器默认蓝色跳脱 */
+input:focus,
+textarea:focus {
+  outline: 2px solid #c73e75;
+  outline-offset: 0;
+}
+
+:root {
+  --font-display:
+    Spline Sans, Inter, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+  --font-mono:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  --font-rounded: 'SF Pro Rounded', 'Hiragino Maru Gothic ProN', Meiryo, 'MS PGothic', sans-serif;
+  --font-serif: Georgia, 'Times New Roman', serif;
+}
