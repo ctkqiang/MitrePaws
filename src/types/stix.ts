@@ -69,20 +69,20 @@ export type TechniqueDataComponent = {
 
 /** 日志源引用（Analytic 中的具体监控点）。 */
 export type AnalyticLogSource = {
-  /** 日志源名称（如 auditd:SYSCALL）。 */
-  name: string;
+  /** 日志源名称（双语；zh 由本地化合并阶段从受控术语表解析）。 */
+  name: BilingualText;
   /** 监控通道说明。 */
   channel: string | null;
 };
 
 /** 检测分析（Detection Analytic）— 官网 Detection 区块中的具体分析项。 */
 export type DetectionAnalytic = {
-  /** Analytic 编号（如 AN0110）。 */
+  /** Analytic 编号（STIX id，本地化文件以此为键）。 */
   id: string;
-  /** 分析名称。 */
-  name: string;
-  /** 分析描述（具体检测逻辑）。 */
-  description: string;
+  /** 分析名称（双语）。 */
+  name: BilingualText;
+  /** 分析描述（双语；具体检测逻辑）。 */
+  description: BilingualText;
   /** 适用平台。 */
   platforms: string[];
   /** 关联的日志源。 */
@@ -91,12 +91,12 @@ export type DetectionAnalytic = {
 
 /** 检测策略（Detection Strategy）— 官网 Detection 区块的策略级描述。 */
 export type DetectionStrategy = {
-  /** 策略编号（如 DET0516）。 */
+  /** 策略编号（STIX id，本地化文件以此为键）。 */
   id: string;
-  /** 策略名称。 */
-  name: string;
-  /** 策略描述。 */
-  description: string;
+  /** 策略名称（双语）。 */
+  name: BilingualText;
+  /** 策略描述（双语）。 */
+  description: BilingualText;
   /** 该策略下的具体分析。 */
   analytics: DetectionAnalytic[];
 };

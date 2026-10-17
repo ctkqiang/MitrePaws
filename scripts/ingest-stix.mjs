@@ -291,18 +291,18 @@ const techniques = rawTechniques
     const assembledDetection = dcNames.length > 0 ? [...new Set(dcNames)].join('; ') : null;
     const detectionText = rawDetection ?? assembledDetection;
 
-    // 检测策略详情（完整还原官网 Detection 区块）
+    // 检测策略详情（完整还原官网 Detection 区块；文本字段双语化，zh 待本地化合并填充）
     const detectionStrategies = strategies.map((s) => ({
       id: s.strategyId,
-      name: s.strategyName,
-      description: s.strategyDescription,
+      name: bi(s.strategyName),
+      description: bi(s.strategyDescription),
       analytics: s.analytics.map((a) => ({
         id: a.id,
-        name: a.name,
-        description: a.description,
+        name: bi(a.name),
+        description: bi(a.description),
         platforms: a.platforms,
         logSources: a.logSources.map((ls) => ({
-          name: ls.name,
+          name: bi(ls.name),
           channel: ls.channel,
         })),
       })),

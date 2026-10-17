@@ -61,6 +61,8 @@ const seed = {
 const tacticZh = readOptional(join('zh', 'tactics.json'));
 const techniqueZh = readOptional(join('zh', 'techniques.json'));
 const techniqueDescZh = readOptional(join('zh', 'technique-descriptions.json'));
+const detectionStrategyZh = readOptional(join('zh', 'detection-strategies.json'));
+const analyticZh = readOptional(join('zh', 'analytics.json'));
 const glossary = readJson(join(ROOT, 'localization', 'glossary.zh.json'));
 
 /** 技术英文名 → 中文译名反查表，供缓解措施同名概念复用。 */
@@ -84,6 +86,7 @@ const missing = {
   mitigationNames: [],
   dataSourceNames: [],
   dataComponentNames: [],
+  logSourceNames: [],
   techniqueDescriptions: 0,
 };
 
@@ -117,6 +120,61 @@ for (const technique of seed.techniques) {
     const detectionZh =
       typeof descEntry === 'object' && descEntry !== null ? descEntry.detection : undefined;
     technique.detection = mergeBi(technique.detection, detectionZh);
+  }
+
+  // 检测策略链：策略名称 / 分析项名称 / 描述走本地化文件，日志源名称走受控术语表
+  for (const strategy of technique.detectionStrategies ?? []) {
+    const dsEntry = detectionStrategyZh[strategy.id];
+    if (dsEntry) {
+      strategy.name = mergeBi(strategy.name, typeof dsEntry === 'string' ? dsEntry : dsEntry.name);
+      if (strategy.description && strategy.description.en) {
+        strategy.description = mergeBi(strategy.description, dsEntry.description);
+      }
+    }
+    for (const analytic of strategy.analytics) {
+      // Analytic 名称固定模式：Analytic NNNN → 分析项 NNNN，规则化不依赖人工译文
+      if (analytic.name && analytic.name.en && analytic.name.en.startsWith('Analytic ')) {
+        const num = analytic.name.en.slice('Analytic '.length);
+        analytic.name = mergeBi(analytic.name, `分析项 ${num}`);
+      }
+      const anEntry = analyticZh[analytic.id];
+      if (anEntry) {
+        if (!(analytic.name.en && analytic.name.en.startsWith('Analytic '))) {
+          analytic.name = mergeBi(analytic.name, typeof anEntry === 'string' ? undefined : anEntry.name);
+        }
+        analytic.description = mergeBi(analytic.description, typeof anEntry === 'string' ? anEntry : anEntry.description);
+      }
+      for (const ls of analytic.logSources) {
+        if (ls.name && ls.name.en) {
+          const lsZh = glossary[ls.name.en];
+          if (!lsZh) {
+            missing.logSourceNames.push(ls.name.en);
+          }
+          ls.name = mergeBi(ls.name, lsZh);
+        }
+      }
+    }
+  }
+
+  // 结构化数据源引用：componentName / dataSourceName 走受控术语表
+  const hasHan = (s) => /[\u4e00-\u9fff]/.test(s);
+  for (const dc of technique.dataComponents ?? []) {
+    if (dc.componentName) {
+      const dcZh = glossary[dc.componentName];
+      if (dcZh) {
+        dc.componentName = dcZh;
+      } else if (!hasHan(dc.componentName)) {
+        missing.dataComponentNames.push(dc.componentName);
+      }
+    }
+    if (dc.dataSourceName) {
+      const dsZh = glossary[dc.dataSourceName];
+      if (dsZh) {
+        dc.dataSourceName = dsZh;
+      } else if (!hasHan(dc.dataSourceName)) {
+        missing.dataSourceNames.push(dc.dataSourceName);
+      }
+    }
   }
 }
 
@@ -219,6 +277,7 @@ report('技术名称', missing.techniqueNames);
 report('缓解措施名称', missing.mitigationNames);
 report('数据源名称', missing.dataSourceNames);
 report('数据组件名称', missing.dataComponentNames);
+report('日志源名称', missing.logSourceNames);
 console.log(
   `[信息] 技术描述已译 ${seed.techniques.length - missing.techniqueDescriptions}/${seed.techniques.length}；`,
 );
