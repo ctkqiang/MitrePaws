@@ -1,0 +1,2462 @@
+{
+ "x-mitre-detection-strategy--1a8d87f1-48ca-4929-a5cc-2b2a03983f12": {
+  "name": "针对 Windows 上额外窗口内存（EWM）注入的检测策略"
+ },
+ "x-mitre-detection-strategy--c7bdd7d7-19dc-4042-8565-5e0cf4656102": {
+  "name": "检测 Windows 上可疑的计划任务创建与执行"
+ },
+ "x-mitre-detection-strategy--b4cdf164-9cb7-4cad-bdc3-81b5574f364a": {
+  "name": "套接字过滤器触发 → 主机上原始套接字活动 → 反向连接（T1205.002）"
+ },
+ "x-mitre-detection-strategy--e8528ab8-3467-423b-92b6-115f8ecc266d": {
+  "name": "检测通过实用工具进行归档（T1560.001）"
+ },
+ "x-mitre-detection-strategy--bb431f45-c3fe-4b98-8dd7-70346b56c880": {
+  "name": "针对未经授权的 VNC 远程控制会话的行为检测"
+ },
+ "x-mitre-detection-strategy--8374a5e5-6d9f-4896-9546-a4d998188ac5": {
+  "name": "针对 Windows 上 WMI 执行滥用的行为检测策略"
+ },
+ "x-mitre-detection-strategy--3a3820cd-260b-43d0-b5af-89b7ba81a044": {
+  "name": "检测防御削弱"
+ },
+ "x-mitre-detection-strategy--a9de0990-69e9-4b1a-9754-1c7fb4102ac9": {
+  "name": "检测通过命令与 API 调用进行屏幕捕获"
+ },
+ "x-mitre-detection-strategy--aea09aae-c0c3-4453-aa44-ea0153e5cb8c": {
+  "name": "针对通过注册表、WMI 和共享内存进行无文件存储的检测策略"
+ },
+ "x-mitre-detection-strategy--6928b108-f04e-4a9b-bda5-53bb0c64ec9b": {
+  "name": "针对启动或登录初始化脚本的检测策略"
+ },
+ "x-mitre-detection-strategy--0eb48c77-9056-4178-900b-7ac23fd1c7cd": {
+  "name": "通过网络与配置异常检测中间人攻击"
+ },
+ "x-mitre-detection-strategy--050d236f-745a-4801-add6-50cb58248615": {
+  "name": "针对通过本地与远程枚举进行用户发现的行为检测"
+ },
+ "x-mitre-detection-strategy--56752265-8647-4ce2-bc6c-c38c2e14685c": {
+  "name": "检测基础设施获取"
+ },
+ "x-mitre-detection-strategy--a51d4d34-78fc-49b7-9071-348905dd33c2": {
+  "name": "针对 T1218.011 Rundll32 滥用的检测策略"
+ },
+ "x-mitre-detection-strategy--2f4449cb-0eec-4871-bff3-f846f12bec15": {
+  "name": "针对容器与资源发现的检测策略"
+ },
+ "x-mitre-detection-strategy--9695c6af-f3cc-40fa-b3a1-351014c6282f": {
+  "name": "检测无服务器（Serverless）"
+ },
+ "x-mitre-detection-strategy--1f6a450a-fd29-4e5c-9708-1ae4616c28c3": {
+  "name": "针对 T1132.001 数据编码：标准编码（Base64/Hex/MIME）在 Windows、Linux、macOS、ESXi 上的行为链检测"
+ },
+ "x-mitre-detection-strategy--99294309-83fd-46f3-9925-7443c03e5b79": {
+  "name": "针对嵌入式载荷的检测策略"
+ },
+ "x-mitre-detection-strategy--9af47d08-fbb3-4122-8af4-74105cc23b62": {
+  "name": "检测对可插拔认证模块（PAM）的恶意修改"
+ },
+ "x-mitre-detection-strategy--f5ee584b-bbbd-481a-af63-c49166b8b1a8": {
+  "name": "针对修改云计算基础设施：回滚云实例的检测策略"
+ },
+ "x-mitre-detection-strategy--b172a0fa-e429-4e6e-89b4-54dcfcefa893": {
+  "name": "检测收集受害主机信息"
+ },
+ "x-mitre-detection-strategy--15afa7ae-955a-4c19-b48e-ad13b68d7a54": {
+  "name": "检测数字证书"
+ },
+ "x-mitre-detection-strategy--fe0d7d82-1575-4685-9a4f-4bf83e0227a0": {
+  "name": "跨平台键盘记录活动的行为检测"
+ },
+ "x-mitre-detection-strategy--f9175415-59ba-497c-b96f-639e01f4cf4e": {
+  "name": "针对文件/路径排除项的检测策略"
+ },
+ "x-mitre-detection-strategy--3243e976-0cf8-4f18-8b50-38b9ee5bfc4c": {
+  "name": "类 Unix 文件权限操纵行为链检测策略"
+ },
+ "x-mitre-detection-strategy--b3ce3826-401f-4549-92ce-c825b4ddafb0": {
+  "name": "通过多源认证失败关联分析检测密码猜测"
+ },
+ "x-mitre-detection-strategy--4e2e06c5-a7bd-40d9-af9b-99fdfe725360": {
+  "name": "检测通过 PubPrn.vbs 进行远程脚本代理执行"
+ },
+ "x-mitre-detection-strategy--4d41c48b-ef2a-49a1-baaa-039625612c20": {
+  "name": "检测购买技术数据"
+ },
+ "x-mitre-detection-strategy--8b8cfd0f-bbe2-417b-b1d2-eebf84d3f008": {
+  "name": "通过敏感内存与注册表访问关联分析检测凭据转储"
+ },
+ "x-mitre-detection-strategy--928a6ce6-fca0-4d66-aba3-1121431b953e": {
+  "name": "针对 T1129 共享模块的行为链、平台感知检测策略"
+ },
+ "x-mitre-detection-strategy--ff993025-1f12-486f-936f-6cc563050278": {
+  "name": "针对从网络设备配置仓库获取数据的检测策略"
+ },
+ "x-mitre-detection-strategy--1dd8a02b-b447-48ed-a146-ad955c9b2dc1": {
+  "name": "针对通过引导区/分区覆写擦除磁盘结构的检测策略"
+ },
+ "x-mitre-detection-strategy--6e1ea095-9f21-4544-8e9b-4fab2668033e": {
+  "name": "跨 IaaS、Linux、Windows 和 macOS 的直接网络洪水检测"
+ },
+ "x-mitre-detection-strategy--4b2bc278-fc80-4ff8-87a3-a6843a9e683a": {
+  "name": "针对利用 PATH 环境变量路径拦截劫持执行流的检测策略"
+ },
+ "x-mitre-detection-strategy--960d6663-6a7f-4f95-affe-a28d71afc7d9": {
+  "name": "检测特权或罕见用户对 SharePoint 数据的异常挖掘"
+ },
+ "x-mitre-detection-strategy--ee674b38-f59a-4f21-860a-19d065e13aaf": {
+  "name": "检测为规避文件系统监控而直接访问卷"
+ },
+ "x-mitre-detection-strategy--d6c1064c-9ea9-4067-835e-7c0627024b0c": {
+  "name": "检测人工智能"
+ },
+ "x-mitre-detection-strategy--fdcd77fc-d6da-4692-a978-461a7f7dba61": {
+  "name": "针对修改云资源层级结构的检测策略"
+ },
+ "x-mitre-detection-strategy--54aaab69-62fb-4d40-b2e0-0d07594353ed": {
+  "name": "针对电子邮件隐藏规则的检测策略"
+ },
+ "x-mitre-detection-strategy--33bbfada-99c8-4cac-8b21-fa013959001d": {
+  "name": "跨平台外部网站篡改的行为检测"
+ },
+ "x-mitre-detection-strategy--d70b8fdd-de14-4143-a350-56e3b885b37b": {
+  "name": "针对加密或编码文件载荷的检测策略"
+ },
+ "x-mitre-detection-strategy--55ddc6ba-a04a-4e68-bb34-741d38d2c33d": {
+  "name": "检测 IP 地址"
+ },
+ "x-mitre-detection-strategy--bdf67026-8adb-41da-9a58-c9acba4da1f3": {
+  "name": "针对通过操作系统资源耗尽洪水造成端点 DoS 的检测策略"
+ },
+ "x-mitre-detection-strategy--00a4e92b-8164-4342-a71c-013ecc777ad0": {
+  "name": "跨平台内核级/用户级 Rootkit 行为检测"
+ },
+ "x-mitre-detection-strategy--f31ad178-1f54-41a6-b286-8040e7eb7158": {
+  "name": "针对通过修改 profile.ps1 实现 PowerShell 配置文件持久化的检测策略"
+ },
+ "x-mitre-detection-strategy--6dd441e4-d264-4f7f-b145-9c122955c532": {
+  "name": "跨平台 JavaScript 执行滥用检测"
+ },
+ "x-mitre-detection-strategy--fecfb9f9-645e-4e09-ba21-05bc60722688": {
+  "name": "跨操作系统平台检测伪造工具界面"
+ },
+ "x-mitre-detection-strategy--3058b630-ede1-4bbb-b8ce-985d802e1e8d": {
+  "name": "检测 DNS"
+ },
+ "x-mitre-detection-strategy--cfdf2a13-7059-4532-9d1c-f9129b0e3f7b": {
+  "name": "检测 IaaS 云存储中为触发删除而修改生命周期策略"
+ },
+ "x-mitre-detection-strategy--c7471b0b-ac10-4eac-aae6-cfa821e707dd": {
+  "name": "针对 T1123 音频捕获在 Windows、Linux、macOS 上的行为检测策略"
+ },
+ "x-mitre-detection-strategy--dab6c58b-2f44-4539-93e1-b03990fc1649": {
+  "name": "跨平台系统进程创建或修改检测"
+ },
+ "x-mitre-detection-strategy--e9833c3c-b5ec-421b-bab4-91f74c2b6bd1": {
+  "name": "针对 T1133 外部远程服务在 Windows、Linux、macOS、容器上的行为链检测"
+ },
+ "x-mitre-detection-strategy--4f95fef5-3b5e-435a-ad00-33d2d9765640": {
+  "name": "针对 macOS 上 Mach-O 二进制文件中 LC_LOAD_DYLIB 修改的检测策略"
+ },
+ "x-mitre-detection-strategy--26fdbcb2-abc1-4844-8e5d-2c6039336cb7": {
+  "name": "通过文件、内存和网络痕迹检测 Web 会话 Cookie 窃取"
+ },
+ "x-mitre-detection-strategy--a1e17bbb-73d6-48d5-b0ab-1350189b0ecd": {
+  "name": "检测恶意 Kubernetes CronJob 调度"
+ },
+ "x-mitre-detection-strategy--263a0357-5f6d-4066-bfda-afeb883e51d7": {
+  "name": "针对使用域名生成算法进行动态解析的检测策略"
+ },
+ "x-mitre-detection-strategy--92ce4302-72cb-4b7b-9184-1fc14900d0e1": {
+  "name": "针对双重文件扩展名伪装的检测策略"
+ },
+ "x-mitre-detection-strategy--d6619253-10cd-4b90-84b5-364c418d2484": {
+  "name": "针对 T1548.002 – 绕过用户账户控制（UAC）的检测策略"
+ },
+ "x-mitre-detection-strategy--9c36b7a8-22bb-4420-a8ac-8e46ddef5674": {
+  "name": "针对资源劫持：通过 SaaS 应用日志检测短信轰炸（SMS Pumping）的检测策略"
+ },
+ "x-mitre-detection-strategy--24eeb599-bc8c-4e86-9adf-232153bcb14b": {
+  "name": "针对互联网连接发现的行为检测"
+ },
+ "x-mitre-detection-strategy--31f41970-898c-4c64-b018-e03eabb81916": {
+  "name": "针对滥用 Sudo 及 Sudo 缓存的行为检测策略"
+ },
+ "x-mitre-detection-strategy--cfedfc6c-6e31-481b-be1e-e23a760fec44": {
+  "name": "检测 Windows 事件日志被禁用"
+ },
+ "x-mitre-detection-strategy--e2c3189b-34cf-4160-bc9f-2dcf4df451c6": {
+  "name": "检测查询公共 AI 服务"
+ },
+ "x-mitre-detection-strategy--edf894b7-052a-4baf-8984-f01ec773c80c": {
+  "name": "检测通过自定义方法进行归档（T1560.003）"
+ },
+ "x-mitre-detection-strategy--af0d25b2-1912-4821-85db-305abe318535": {
+  "name": "针对修改云计算基础设施的检测策略"
+ },
+ "x-mitre-detection-strategy--31fef61c-301b-4a3d-aced-06632e321926": {
+  "name": "检测网络设备"
+ },
+ "x-mitre-detection-strategy--40b862cb-89a4-4200-baa0-bb171ecc2ce2": {
+  "name": "检测恶意广告"
+ },
+ "x-mitre-detection-strategy--685546e7-2ec3-4bfa-9109-86df9fb196ee": {
+  "name": "针对权限组发现的行为检测"
+ },
+ "x-mitre-detection-strategy--2470975e-6748-42a5-9a48-74dc7b687fe9": {
+  "name": "通过本地邮件访问与自动转发行为检测电子邮件收集"
+ },
+ "x-mitre-detection-strategy--13c88a68-15e3-45e5-958b-82fe7b948561": {
+  "name": "通过注册表转储与本地文件访问从 SAM 转储凭据"
+ },
+ "x-mitre-detection-strategy--92955a28-74fb-4f60-834a-10dc93377140": {
+  "name": "检测 WHOIS"
+ },
+ "x-mitre-detection-strategy--e90ab093-47a3-4c05-80b1-1919d2362ea9": {
+  "name": "针对 T1542.001 预操作系统启动：系统固件的检测策略"
+ },
+ "x-mitre-detection-strategy--52cee5e7-a92e-433e-9b56-38c8f7b16264": {
+  "name": "检测搜索受害者拥有的网站"
+ },
+ "x-mitre-detection-strategy--55e10a13-d18d-4ce5-a773-c4ec6bd68d52": {
+  "name": "针对通过 API 与 CLI 访问进行云组枚举的行为检测"
+ },
+ "x-mitre-detection-strategy--a44e6677-25d9-495a-91fd-e2611dac9477": {
+  "name": "针对通过服务注册表权限弱点劫持执行流的检测策略"
+ },
+ "x-mitre-detection-strategy--e7b468e8-3b2c-43ea-aabb-e8ba993bd7ae": {
+  "name": "检测 DNS/被动 DNS"
+ },
+ "x-mitre-detection-strategy--430abda8-2a2c-4ab8-bbd6-eb205a189362": {
+  "name": "跨平台应用耗尽洪水检测"
+ },
+ "x-mitre-detection-strategy--ec870f2d-bba3-43f9-95b8-c2f85678dba4": {
+  "name": "依赖项/开发工具中的供应链篡改（包管理器→写入/安装→首次运行→外发）"
+ },
+ "x-mitre-detection-strategy--4cadb231-5487-4135-834b-d0db75a93a45": {
+  "name": "检测数字证书"
+ },
+ "x-mitre-detection-strategy--a1757dd9-9abb-4fd1-a06d-6cbfd80d77e9": {
+  "name": "检测 DNS 服务器"
+ },
+ "x-mitre-detection-strategy--da01afef-b769-4d31-964d-901fabaf6a8f": {
+  "name": "针对通过直接磁盘访问与破坏性命令擦除磁盘的检测策略"
+ },
+ "x-mitre-detection-strategy--c2721658-fa76-4b6f-9f84-50618de81ae0": {
+  "name": "针对 DNS 隧道与应用层协议滥用的行为检测"
+ },
+ "x-mitre-detection-strategy--6182825d-f41f-4d87-ac93-937f7894ab1d": {
+  "name": "检测访问云实例元数据 API（IaaS）"
+ },
+ "x-mitre-detection-strategy--f07cfa67-8a83-4a62-ae18-bee29bfc7569": {
+  "name": "检测为提取凭据而对 securityd 内存的可疑访问"
+ },
+ "x-mitre-detection-strategy--e5eff2eb-4a41-44d1-9c79-4977fb73f569": {
+  "name": "针对 Windows 上组策略发现的检测策略"
+ },
+ "x-mitre-detection-strategy--74252ca3-585e-466f-8020-ed77ebda3369": {
+  "name": "针对启动文件创建或修改的检测策略"
+ },
+ "x-mitre-detection-strategy--a5800f15-f024-4701-912a-20d7e1cb465a": {
+  "name": "检测从可移动介质访问与收集数据"
+ },
+ "x-mitre-detection-strategy--621ecbd0-a183-4dbd-913c-656436e62c1d": {
+  "name": "检测通过 mavinject.exe（App-V 注入器）进行代码注入"
+ },
+ "x-mitre-detection-strategy--e91165c5-e850-465e-9042-6ba82478b522": {
+  "name": "检测渗出前的本地数据暂存"
+ },
+ "x-mitre-detection-strategy--b667390b-a805-401d-9e02-929204825114": {
+  "name": "针对利用合法资源名称或位置进行伪装的检测策略"
+ },
+ "x-mitre-detection-strategy--2e8be762-9987-4f19-997d-2f7c7540b8e1": {
+  "name": "检测数字证书"
+ },
+ "x-mitre-detection-strategy--e3776b4e-00b0-44cd-9e77-5df960a979d7": {
+  "name": "针对跨操作系统平台存储数据操纵的检测策略"
+ },
+ "x-mitre-detection-strategy--ee07e9eb-8438-4c7c-8260-88a09fbe98de": {
+  "name": "通过可疑文件访问与哈希分析工具检测凭据转储后的密码破解"
+ },
+ "x-mitre-detection-strategy--8fb1967e-478f-4a83-9fb9-3da1015b8a26": {
+  "name": "通过 Outlook 数据文件访问与命令行工具检测本地电子邮件收集"
+ },
+ "x-mitre-detection-strategy--cc6c18b5-1fa6-4e27-8c78-e479428bef44": {
+  "name": "检测为窃取凭据而访问 macOS 钥匙串"
+ },
+ "x-mitre-detection-strategy--a9796458-df5d-467f-b037-acad6c261f25": {
+  "name": "针对启动或登录自启动执行的检测策略"
+ },
+ "x-mitre-detection-strategy--c29886a9-676a-441a-adcd-6f239f8eb6b0": {
+  "name": "通过注册表与内存提取检测 LSA 机密转储"
+ },
+ "x-mitre-detection-strategy--de98fda3-10f9-4013-a163-fb9b6c117a9b": {
+  "name": "针对网络设备上削弱加密的检测策略"
+ },
+ "x-mitre-detection-strategy--b6d7d7cb-b56f-4095-b3ac-21147b0123e5": {
+  "name": "针对伪造 SAML 令牌的检测策略"
+ },
+ "x-mitre-detection-strategy--e2d84c66-3647-4aab-962b-c1ad89455a18": {
+  "name": "针对通过修改文件类型进行伪装的检测策略"
+ },
+ "x-mitre-detection-strategy--ae37afa8-87d5-4091-ac33-010e78eefe97": {
+  "name": "跨平台服务停止的行为检测"
+ },
+ "x-mitre-detection-strategy--04f78d17-4599-4ecd-9a8f-f221ab2759cc": {
+  "name": "检测恶意软件"
+ },
+ "x-mitre-detection-strategy--ff6c2db6-cc1b-47e0-89a6-536f83b74906": {
+  "name": "针对设备驱动发现的检测策略"
+ },
+ "x-mitre-detection-strategy--50569af3-7910-4591-977e-cbf4caa12cfd": {
+  "name": "跨平台域账户枚举"
+ },
+ "x-mitre-detection-strategy--ba8d3a5d-9ddc-4301-b021-84ca2c6854de": {
+  "name": "通过 StubPath 执行检测 Active Setup 持久化"
+ },
+ "x-mitre-detection-strategy--bd2348f8-acef-4310-bd03-cf7b866d2592": {
+  "name": "针对跨平台隐藏痕迹的检测策略"
+ },
+ "x-mitre-detection-strategy--3f3ebc58-fff0-4083-bc5c-ee7308026a20": {
+  "name": "检测动态数据交换（DDE）滥用（T1559.002）"
+ },
+ "x-mitre-detection-strategy--e2023eb5-d813-4a08-985e-e8c998672037": {
+  "name": "用户执行 – 恶意文件经下载/打开 → 生成进程链（T1204.002）"
+ },
+ "x-mitre-detection-strategy--f5ac003f-2fdc-4ac5-9f2b-3fb2ab00fe95": {
+  "name": "检测识别业务节奏"
+ },
+ "x-mitre-detection-strategy--1d769567-7e82-47f4-8dc8-5a503f524134": {
+  "name": "针对禁用或修改 Linux 审计系统日志的检测策略"
+ },
+ "x-mitre-detection-strategy--16495e17-03ec-4e11-ab80-f76ed6386329": {
+  "name": "针对发布/订阅协议被滥用于 C2 的行为检测"
+ },
+ "x-mitre-detection-strategy--d6c882c8-0f01-4027-b988-b979d60e0030": {
+  "name": "检测硬件"
+ },
+ "x-mitre-detection-strategy--cdfe6166-43e9-434a-a961-139edd58ca0c": {
+  "name": "检测写入共享存储的污染内容"
+ },
+ "x-mitre-detection-strategy--9e93c9d8-3e37-45ae-88d5-12914d98ba5a": {
+  "name": "检测域或租户策略中的信任关系修改"
+ },
+ "x-mitre-detection-strategy--18fe3660-c079-4522-b1d7-7ce7f65f9686": {
+  "name": "跨环境的可疑数据库访问与转储活动（T1213.006）"
+ },
+ "x-mitre-detection-strategy--32c549cd-a06b-41f2-8063-8937ba7feab6": {
+  "name": "针对跨操作系统平台通过对称加密建立加密信道的检测策略"
+ },
+ "x-mitre-detection-strategy--21ad7ddc-77f6-422b-8e0c-c82e184e0ad0": {
+  "name": "跨主机平台本地账户枚举"
+ },
+ "x-mitre-detection-strategy--172b779a-9d14-4c5f-ba4c-3e784b4ae1b6": {
+  "name": "检测社交媒体账户"
+ },
+ "x-mitre-detection-strategy--101e19ca-f902-4c2d-8ceb-ddd07a43f1a7": {
+  "name": "跨平台检测恶意浏览器扩展"
+ },
+ "x-mitre-detection-strategy--8f6ddd50-aeb8-48ae-8f4a-83b314829ca3": {
+  "name": "针对 T1542.005 预操作系统启动：TFTP 启动的检测策略"
+ },
+ "x-mitre-detection-strategy--488ef272-b2fa-4501-ab6e-97e3ac01816c": {
+  "name": "检测 Windows 防火墙"
+ },
+ "x-mitre-detection-strategy--c7d19c6f-a7f8-4323-af57-c626ccb74d88": {
+  "name": "检测 Windows 服务创建或修改"
+ },
+ "x-mitre-detection-strategy--4556646a-39df-48bf-9df3-623d4da7a859": {
+  "name": "针对使用 Fast Flux DNS 进行动态解析的检测策略"
+ },
+ "x-mitre-detection-strategy--5b998fb4-fb3f-4207-ae00-cdf0e1a22b76": {
+  "name": "跨 Windows、Linux、macOS 通过系统检查进行虚拟化/沙箱规避"
+ },
+ "x-mitre-detection-strategy--6bab4067-9bfc-4e7f-b7fc-e578acd81e6a": {
+  "name": "跨平台检测滥用 Cron 任务实现持久化与执行"
+ },
+ "x-mitre-detection-strategy--69f22425-2ebb-4f3c-ab4d-fb9c6645f2f7": {
+  "name": "针对域组发现的行为检测"
+ },
+ "x-mitre-detection-strategy--80741edd-b775-4c33-91a2-4a0d1ee4f6bc": {
+  "name": "检测漏洞"
+ },
+ "x-mitre-detection-strategy--ed58a144-2554-495c-9c60-18e6f817aa75": {
+  "name": "针对鱼叉式钓鱼链接的检测策略"
+ },
+ "x-mitre-detection-strategy--28d6ebc3-3b01-45e1-b48e-6491364d23e9": {
+  "name": "针对通过应用或系统漏洞利用造成端点 DoS 的检测策略"
+ },
+ "x-mitre-detection-strategy--71a8576b-c9ef-4485-b461-d706fd757a67": {
+  "name": "通过宏、表单与注册表挂钩检测基于 Office 启动的持久化"
+ },
+ "x-mitre-detection-strategy--7f7679d8-c2eb-4fcc-be46-27055ef491a6": {
+  "name": "检测通过 InstallUtil.exe 执行恶意代码"
+ },
+ "x-mitre-detection-strategy--c9242c28-ee1a-45d2-800a-948252884a7c": {
+  "name": "检测鱼叉式钓鱼链接"
+ },
+ "x-mitre-detection-strategy--5367273a-2f30-413e-a961-1dbd323be5b0": {
+  "name": "针对远程 SSH 登录及其后执行行为的行为检测"
+ },
+ "x-mitre-detection-strategy--264a9ce0-b26f-4cc6-bdf4-384b0d188a95": {
+  "name": "针对向云账户添加角色的检测策略"
+ },
+ "x-mitre-detection-strategy--b661f959-953f-4329-a43a-f1b060e7626b": {
+  "name": "针对 T1547.012 的 Windows 检测策略 - 打印处理器 DLL 持久化"
+ },
+ "x-mitre-detection-strategy--8d904004-e492-4f76-9f84-be75fc61e5c5": {
+  "name": "针对跨操作系统平台鱼叉式钓鱼附件的检测策略"
+ },
+ "x-mitre-detection-strategy--e4040d30-1f5a-4f80-9f06-f1c1d2a8c238": {
+  "name": "针对跨平台去符号化载荷的检测策略"
+ },
+ "x-mitre-detection-strategy--96c3e267-9dde-45cb-b700-e27c1a672cf8": {
+  "name": "检测组件对象模型（COM）滥用（T1559.001）"
+ },
+ "x-mitre-detection-strategy--bd33de0c-1ed7-42ea-b77d-1fd5d33acd3b": {
+  "name": "针对 DLL 执行流劫持的检测策略"
+ },
+ "x-mitre-detection-strategy--5e9a51b5-7e4a-4e78-a1ba-215ce937c877": {
+  "name": "跨平台自动化文件与 API 收集检测"
+ },
+ "x-mitre-detection-strategy--63d80d1b-ca5b-427d-b603-cf65e6e245b9": {
+  "name": "检测降级攻击"
+ },
+ "x-mitre-detection-strategy--461e3a2b-2315-4550-abb4-0bd73b0ceaa6": {
+  "name": "异常上下文中的剪贴板数据访问"
+ },
+ "x-mitre-detection-strategy--dc017318-98a3-450b-b903-fe1e7d988197": {
+  "name": "检测 Linux 上通过访问 /proc 文件系统进行操作系统凭据转储"
+ },
+ "x-mitre-detection-strategy--0f7bb8ed-f114-48f6-b57f-d2047d11ca17": {
+  "name": "检测僵尸网络"
+ },
+ "x-mitre-detection-strategy--a5600691-be46-424a-b8ef-a2c9159da49a": {
+  "name": "检测对密码管理器的未经授权访问"
+ },
+ "x-mitre-detection-strategy--62d7a748-dee5-46c7-b61c-77f57f371b4f": {
+  "name": "通过隔离标志与信任控制操纵检测 Gatekeeper 绕过"
+ },
+ "x-mitre-detection-strategy--c1d8aa38-aefb-4ea8-8c80-2dfa05eaaecb": {
+  "name": "针对 ESXi 管理命令的检测策略"
+ },
+ "x-mitre-detection-strategy--3e6efcf8-8308-4832-b247-ce08703c7ed9": {
+  "name": "检测路过式（Drive-by）目标"
+ },
+ "x-mitre-detection-strategy--d8e8768e-34c1-45f4-95d2-fa7ba317b63a": {
+  "name": "跨操作系统平台系统服务发现命令检测"
+ },
+ "x-mitre-detection-strategy--49505f6d-b778-4a84-a072-9236b700e7b5": {
+  "name": "针对跨平台网络嗅探的检测策略"
+ },
+ "x-mitre-detection-strategy--01cc085c-7d7d-49fc-9d15-bc5b2226026a": {
+  "name": "检测可疑或恶意的代码签名滥用"
+ },
+ "x-mitre-detection-strategy--1177cbb7-bc00-4a36-8774-d51b7b3c66e9": {
+  "name": "多平台云存储数据渗出行为链"
+ },
+ "x-mitre-detection-strategy--41107d12-dd2e-439f-af29-1a10dcfcb6ce": {
+  "name": "针对运行时数据操纵的检测策略"
+ },
+ "x-mitre-detection-strategy--6c9e1f65-7d75-4091-b97d-e5f88ed12812": {
+  "name": "通过 Windows 注册表枚举检测凭据发现"
+ },
+ "x-mitre-detection-strategy--e7870b55-7420-444a-9751-99fb5fbf4cd9": {
+  "name": "针对 T1135 网络共享发现在 Windows、Linux 和 macOS 上的行为链检测"
+ },
+ "x-mitre-detection-strategy--f273ee4a-e468-4a01-bb1a-f3a687518ded": {
+  "name": "通过系统实用工具与 API 调用进行外围设备枚举"
+ },
+ "x-mitre-detection-strategy--eccdd5b4-e19e-4254-909e-4a9c2e3ac27e": {
+  "name": "针对通过破坏进程树进行伪装的检测策略"
+ },
+ "x-mitre-detection-strategy--1238c5f2-07ef-4a31-bc3a-e0cc0eb12516": {
+  "name": "检测网络拓扑"
+ },
+ "x-mitre-detection-strategy--c8a4587f-6fa1-4a94-844b-ee731f1c33be": {
+  "name": "检测代码签名证书"
+ },
+ "x-mitre-detection-strategy--a1b25828-57bf-470c-8f47-8ad4e1f6bbdb": {
+  "name": "Windows DACL 操纵行为链检测策略"
+ },
+ "x-mitre-detection-strategy--53144b02-d6b1-42de-b5cf-e785a59c43bd": {
+  "name": "检测通过恶意 Office 加载项实现持久化"
+ },
+ "x-mitre-detection-strategy--f0190654-2eda-42a7-9a4d-6edc95aada02": {
+  "name": "针对禁用或修改云日志的检测策略"
+ },
+ "x-mitre-detection-strategy--90ee8005-5476-422f-abe0-6c231f004cd6": {
+  "name": "针对 T1505.002 - 传输代理滥用（Windows/Linux）的检测策略"
+ },
+ "x-mitre-detection-strategy--75161d5e-2b6d-4112-ab4d-338f70ea97f0": {
+  "name": "通过本地与远程实用工具进行系统发现"
+ },
+ "x-mitre-detection-strategy--155cab5b-c70b-4cfb-ba52-f62a21836b19": {
+  "name": "检测基于应用层协议的命令与控制"
+ },
+ "x-mitre-detection-strategy--387ae9f0-0b8b-49b9-ab85-8f325a583d24": {
+  "name": "针对在 Windows 上通过 AppDomainManager 劫持执行流的检测策略"
+ },
+ "x-mitre-detection-strategy--20f11806-1639-49c5-ae0b-84633a142870": {
+  "name": "检测渗出前的远程数据暂存"
+ },
+ "x-mitre-detection-strategy--7c27cb31-4806-479f-a07b-900450236a57": {
+  "name": "Kubernetes 中可疑的 RoleBinding 或 ClusterRoleBinding 分配"
+ },
+ "x-mitre-detection-strategy--df11466a-27a2-4cb1-bf73-2a3a4aaee0d9": {
+  "name": "跨平台计划任务/作业滥用的行为检测"
+ },
+ "x-mitre-detection-strategy--0602b47a-d37c-4eee-ac4b-b464060945ab": {
+  "name": "检测滥用 Msiexec 进行本地、网络及 DLL 执行"
+ },
+ "x-mitre-detection-strategy--d50064d2-b166-4da7-9f9b-b56b7cf16e0a": {
+  "name": "检测网络信任依赖关系"
+ },
+ "x-mitre-detection-strategy--20f5a44b-e9bb-48e9-9bea-e7a3d757005f": {
+  "name": "针对反射放大 DoS（T1498.002）的检测策略"
+ },
+ "x-mitre-detection-strategy--f722c058-8449-49ee-8e18-c3e76ec60a51": {
+  "name": "检测恶意密码筛选器 DLL 注册"
+ },
+ "x-mitre-detection-strategy--d9073646-f875-4c38-9b37-e9ac11c40188": {
+  "name": "针对 T1505.005 – 终端服务 DLL 修改（Windows）的检测策略"
+ },
+ "x-mitre-detection-strategy--af66dc57-77fc-42a7-9e84-7a588c3ab516": {
+  "name": "检测 macOS 上基于 AppleScript 的执行"
+ },
+ "x-mitre-detection-strategy--eaa0f0da-bee7-4ce3-97e5-46d5ac2a9257": {
+  "name": "检测恶意或未经授权的软件扩展"
+ },
+ "x-mitre-detection-strategy--1a45b10a-c410-4212-8018-7c00bb292dab": {
+  "name": "针对通过服务耗尽洪水造成端点 DoS 的检测策略"
+ },
+ "x-mitre-detection-strategy--4dfcf95f-0bbb-4ae7-8bd5-91e3e6c51809": {
+  "name": "通过主机状态与启动完整性检查检测硬件供应链攻陷"
+ },
+ "x-mitre-detection-strategy--36654ec6-5019-4e79-b299-1fbf3a03e064": {
+  "name": "针对通过异常 DLL 加载与直接系统调用调用原生 API 的行为检测"
+ },
+ "x-mitre-detection-strategy--5c4334d0-cda0-4372-8572-fe2a109d39cb": {
+  "name": "检测 Kerberos Ccache 文件窃取或滥用（T1558.005）"
+ },
+ "x-mitre-detection-strategy--45ac24cf-b8f4-44d5-97e1-3efe2bf28abc": {
+  "name": "针对网络历史与配置篡改的行为检测"
+ },
+ "x-mitre-detection-strategy--d881e35b-5401-46c0-b966-8880c64681ab": {
+  "name": "检测 AS-REP Roasting 尝试（T1558.004）"
+ },
+ "x-mitre-detection-strategy--cfcbb930-2395-4f7a-b95c-6b2736679c81": {
+  "name": "检测虚拟专用服务器（VPS）"
+ },
+ "x-mitre-detection-strategy--a948dd3c-a8f3-4bc0-aec3-4c5264e7a012": {
+  "name": "针对 AutoHotKey 与 AutoIT 滥用的检测策略"
+ },
+ "x-mitre-detection-strategy--bcddd949-40be-40dd-949e-8f69f893360b": {
+  "name": "针对削弱加密：缩减网络设备密钥空间的检测策略"
+ },
+ "x-mitre-detection-strategy--dcc65927-b113-4f42-b7bd-adb6caebf24a": {
+  "name": "针对命令历史清除的行为检测"
+ },
+ "x-mitre-detection-strategy--f3cc2f0f-c657-4453-90a8-d7c9a59d6e37": {
+  "name": "间接命令执行 – Windows 实用工具滥用行为链"
+ },
+ "x-mitre-detection-strategy--8225c396-cbf9-499a-b94d-bdc7a1f07458": {
+  "name": "通过文件与进程活动检测可移动介质执行链"
+ },
+ "x-mitre-detection-strategy--36bb5edf-e7b6-4d36-8ccc-1a18ddc573da": {
+  "name": "检测渗出前的本地数据收集"
+ },
+ "x-mitre-detection-strategy--5b3bf2de-d91e-4272-97a8-5df6f4071e45": {
+  "name": "检测攻击者对文件与载荷的去混淆或解码"
+ },
+ "x-mitre-detection-strategy--83a814c2-73ac-4942-84ad-704a272cd864": {
+  "name": "检测通过恶意 Outlook 规则实现持久化"
+ },
+ "x-mitre-detection-strategy--df374bac-bd69-4351-be3f-1bd863c429ad": {
+  "name": "检测云账户"
+ },
+ "x-mitre-detection-strategy--d50c5f8f-0091-4675-8264-abcb4247de26": {
+  "name": "检测电子邮件账户"
+ },
+ "x-mitre-detection-strategy--13233865-3b73-4065-a056-43fcd6eb6ed5": {
+  "name": "检测被可疑添加至本地组或域组"
+ },
+ "x-mitre-detection-strategy--faa650c9-a469-45f1-870a-6acc448df9eb": {
+  "name": "检测上传恶意软件"
+ },
+ "x-mitre-detection-strategy--18c9199f-d6b6-4efe-ac90-9a1b7b8c6f36": {
+  "name": "针对供应链攻陷的行为检测（软件包/更新篡改 → 安装 → 首次运行）"
+ },
+ "x-mitre-detection-strategy--dd8477c8-2aad-4db3-b810-fe0d2f605fa8": {
+  "name": "利用面向公众的应用 – 多信号关联分析（请求 → 错误 → 利用后进程/外发）"
+ },
+ "x-mitre-detection-strategy--3638f523-dc38-4ff0-8682-d2027af5bd77": {
+  "name": "检测 Kerberos 票据窃取或伪造（T1558）"
+ },
+ "x-mitre-detection-strategy--1a273fde-f4fc-4ca0-94d4-7df285167b5e": {
+  "name": "检测从密码存储库访问凭据"
+ },
+ "x-mitre-detection-strategy--1753ab98-4530-4284-9bc3-5d4813abfb9e": {
+  "name": "针对通过 Web 服务渗出数据的检测策略"
+ },
+ "x-mitre-detection-strategy--ec412019-109f-4f84-aa2f-d623f40254e0": {
+  "name": "针对远程访问工具的行为链检测（与工具无关）"
+ },
+ "x-mitre-detection-strategy--354dfdf4-9da9-45b5-909c-13f5702fc263": {
+  "name": "检测域名"
+ },
+ "x-mitre-detection-strategy--a3dcb195-d1b5-4bce-b62b-ba9bdaed56d5": {
+  "name": "检测通过库进行归档（T1560.002）"
+ },
+ "x-mitre-detection-strategy--47dd679b-1bd4-4bb7-a946-5d77fd49a939": {
+  "name": "针对通过线程挂起与上下文切换劫持线程执行的行为检测"
+ },
+ "x-mitre-detection-strategy--48923678-0fb6-4d14-986b-2f6adeb8c421": {
+  "name": "检测社会工程"
+ },
+ "x-mitre-detection-strategy--408aedab-4a23-41ad-809d-fe9c3805b7f6": {
+  "name": "跨平台通过元数据与执行差异进行伪装的行为检测"
+ },
+ "x-mitre-detection-strategy--22fe898e-3b53-468c-b2b2-dd59abc83297": {
+  "name": "针对通过 sdbinst.exe 与注册表痕迹进行应用填充（Shimming）的检测策略（Windows）"
+ },
+ "x-mitre-detection-strategy--d1912fbc-aaac-4bb1-82f1-0713280ca9a1": {
+  "name": "跨平台检测访问或搜索未受保护的凭据"
+ },
+ "x-mitre-detection-strategy--a62dbd10-5b61-489c-a465-8f792792778e": {
+  "name": "针对 T1547.010 – 通过 spoolsv.exe 实现端口监视器 DLL 持久化（Windows）的检测策略"
+ },
+ "x-mitre-detection-strategy--08633541-0006-480a-a2d9-e1c81952cc71": {
+  "name": "针对为反取证而删除邮箱数据与日志的行为检测"
+ },
+ "x-mitre-detection-strategy--6aa65bd1-4c0c-4bf7-ba74-ba0d8edd9cb9": {
+  "name": "针对 macOS 上登录钩子（Login Hook）持久化的检测策略"
+ },
+ "x-mitre-detection-strategy--7a084a47-c4ea-4996-8d23-ffe0b19206fb": {
+  "name": "针对内容注入的检测策略"
+ },
+ "x-mitre-detection-strategy--9833b57b-4c83-4f58-b4cf-76f041b29273": {
+  "name": "跨平台进程注入的行为检测"
+ },
+ "x-mitre-detection-strategy--dcc26ef4-3ecd-4b37-b4b4-66faee084352": {
+  "name": "针对通过 Webhook 渗出数据的检测策略"
+ },
+ "x-mitre-detection-strategy--1e601759-c5d1-45cc-97a1-972967426794": {
+  "name": "流量信令（端口敲门/魔术包 → 防火墙或服务激活）– T1205"
+ },
+ "x-mitre-detection-strategy--f40c0c98-76fe-4e2a-970a-0491f52a9a47": {
+  "name": "检测通过云原生方法直接访问虚拟机控制台"
+ },
+ "x-mitre-detection-strategy--ce0b969a-1411-4b6f-a6aa-c31ef6fe6727": {
+  "name": "跨平台检测通过受信任的签名二进制文件进行代理执行"
+ },
+ "x-mitre-detection-strategy--f9d25557-f87b-4920-a98b-8a3c9df4bfce": {
+  "name": "跨平台通过元数据篡改进行文件时间戳伪造的行为检测"
+ },
+ "x-mitre-detection-strategy--b376d299-69ef-444a-8ba1-15a6c7049605": {
+  "name": "检测网络设备上的恶意孪生（Evil Twin）Wi-Fi 接入点"
+ },
+ "x-mitre-detection-strategy--dc415caf-2f8f-4208-8aa8-7db10729cbfb": {
+  "name": "针对反射式代码加载的检测策略"
+ },
+ "x-mitre-detection-strategy--baea10fc-7921-4ae2-bfe6-572c3f107303": {
+  "name": "针对 Wi-Fi 发现活动的行为检测"
+ },
+ "x-mitre-detection-strategy--d22f1848-fc32-4fdb-999b-9c0845fb6552": {
+  "name": "跨平台基于互斥体（Mutex）的执行防护机制检测"
+ },
+ "x-mitre-detection-strategy--29d1e77a-a05e-4ead-8272-b254992cd2ba": {
+  "name": "针对忽略进程中断的检测策略"
+ },
+ "x-mitre-detection-strategy--8796c5cc-7e5a-402f-8252-f083aafc5cc9": {
+  "name": "针对逃逸到宿主机的检测策略"
+ },
+ "x-mitre-detection-strategy--a3bdd6e2-92d3-45db-a486-9f051c68672b": {
+  "name": "通过 CLI、注册表与进程检查进行备份软件发现（T1518.002）"
+ },
+ "x-mitre-detection-strategy--300931b1-bd28-4e91-ba6e-585f3563e8e4": {
+  "name": "针对 T1547.009 – 快捷方式修改（Windows）的检测策略"
+ },
+ "x-mitre-detection-strategy--d2daf569-4fc9-46a3-97b7-4d3d76c04a64": {
+  "name": "检测通过 API 或脚本枚举应用窗口"
+ },
+ "x-mitre-detection-strategy--8a9b730a-b290-40ce-b182-dbcb06fbad3d": {
+  "name": "针对系统服务：Systemctl 的检测策略"
+ },
+ "x-mitre-detection-strategy--e2f961bd-ddc5-4940-bc62-e2b0bd3405f8": {
+  "name": "通过电子邮件账户发现枚举全局地址列表"
+ },
+ "x-mitre-detection-strategy--90b6ef43-3f63-47c5-af59-ed4f95cc9c87": {
+  "name": "通过休眠、定时器循环与延迟执行检测基于时间的规避"
+ },
+ "x-mitre-detection-strategy--c254ecff-c728-4de8-a0f8-e5ad5015aa32": {
+  "name": "检测通过 CMSTP.exe 安装恶意配置文件"
+ },
+ "x-mitre-detection-strategy--bdbd724e-b3e2-44d7-a9d6-ba2a4915762c": {
+  "name": "针对 SSH 会话劫持的检测策略"
+ },
+ "x-mitre-detection-strategy--3ec6ad13-f3d6-4eb2-91fe-6ee5266d1447": {
+  "name": "针对定时传输与周期性渗出模式的检测策略"
+ },
+ "x-mitre-detection-strategy--04cbfa17-64a5-454d-8734-cead02ba5c43": {
+  "name": "针对 SMB 管理共享横向移动的多事件检测"
+ },
+ "x-mitre-detection-strategy--c08df366-fa5a-4f34-a27e-b28e756f09f0": {
+  "name": "针对 T1525 – 植入内部镜像的检测策略"
+ },
+ "x-mitre-detection-strategy--fff8e15e-f7eb-4c07-8b77-8e7ef2eb01b6": {
+  "name": "针对跨操作系统平台协议隧道的检测策略"
+ },
+ "x-mitre-detection-strategy--012e526a-dacd-4019-a019-bc68733395d2": {
+  "name": "检测通过 control.exe 或 Rundll32 执行恶意控制面板项"
+ },
+ "x-mitre-detection-strategy--218a24ca-9534-44e2-9282-fb08373e7845": {
+  "name": "针对网络地址转换（NAT）穿透的检测策略"
+ },
+ "x-mitre-detection-strategy--80d1271b-a18a-469a-a60a-81d8f468b0e6": {
+  "name": "检测上传工具"
+ },
+ "x-mitre-detection-strategy--6b47bf45-a3f2-4d4b-884a-3cec3ef3f994": {
+  "name": "针对安全支持提供程序（SSP）滥用的注册表与 LSASS 监控"
+ },
+ "x-mitre-detection-strategy--8f268381-938f-454e-8d19-f266b69958ea": {
+  "name": "针对覆写进程参数伪装的检测策略"
+ },
+ "x-mitre-detection-strategy--2b666abc-e642-4f40-abec-36bd48f1f15c": {
+  "name": "针对使用替代认证材料（T1550）的行为检测策略"
+ },
+ "x-mitre-detection-strategy--deb0a989-7d09-4403-b1a1-8658e36a0f9a": {
+  "name": "检测威胁情报厂商"
+ },
+ "x-mitre-detection-strategy--9280a84d-bf77-4a86-a052-ce6ea0d50e72": {
+  "name": "检测通过备用网络接口渗出数据"
+ },
+ "x-mitre-detection-strategy--f3bc6ce9-29ad-4ad4-813c-1a4176b5c7a2": {
+  "name": "针对通过配置仓库转储网络设备配置的检测策略"
+ },
+ "x-mitre-detection-strategy--b5ec4351-ee04-4beb-a019-b1f6d0e00894": {
+  "name": "检测收集受害者身份信息"
+ },
+ "x-mitre-detection-strategy--043bc738-1f07-4d28-9f5c-1b1f81525e7c": {
+  "name": "检测对收集数据的归档与加密（T1560）"
+ },
+ "x-mitre-detection-strategy--541f2335-1046-4621-9829-1a4a305069c5": {
+  "name": "针对利用 SIP 与信任提供程序劫持颠覆信任控制的检测策略"
+ },
+ "x-mitre-detection-strategy--759a29fb-8697-46f7-baa3-a891b28c064e": {
+  "name": "通过权限提升、句柄访问及向浏览器注入远程线程检测浏览器会话劫持"
+ },
+ "x-mitre-detection-strategy--d33ffd4e-6328-4b10-84c0-7ad4a241b02d": {
+  "name": "针对远程服务登录及访问后活动的行为检测策略"
+ },
+ "x-mitre-detection-strategy--bcb3772f-25d7-4e41-8e37-ec0dc759f44d": {
+  "name": "检测基于邮件协议的 C2 活动（SMTP、IMAP、POP3）"
+ },
+ "x-mitre-detection-strategy--6b681059-99f7-46ff-bd36-96fd414074d4": {
+  "name": "检测混合身份认证流程修改"
+ },
+ "x-mitre-detection-strategy--574d055c-4501-4f4d-9b28-1109ad07a087": {
+  "name": "检测漏洞扫描"
+ },
+ "x-mitre-detection-strategy--e7bd0f37-f2cf-4e3c-a9c1-c41f63b67e1c": {
+  "name": "针对恶意云 API 脚本调用的行为检测"
+ },
+ "x-mitre-detection-strategy--dc9fa05f-7e98-41ef-9d40-21fd1425f5d5": {
+  "name": "检测搜索开放技术数据库"
+ },
+ "x-mitre-detection-strategy--d41df11d-b2cd-4afc-89a5-9c77e7f31985": {
+  "name": "检测滥用 Electron 应用进行代理执行"
+ },
+ "x-mitre-detection-strategy--f012e122-9f78-4370-a481-d2efaa181359": {
+  "name": "针对恶意域控制器（DCShadow）注册与复制滥用的检测策略"
+ },
+ "x-mitre-detection-strategy--eec6a137-c506-4654-8780-8e3028f3fd28": {
+  "name": "检测代码签名策略修改（Windows 与 macOS）"
+ },
+ "x-mitre-detection-strategy--994c7fc6-ad85-47e6-9079-fb872ec7e541": {
+  "name": "针对 T1610 部署容器在 Docker 与 Kubernetes 控制面/节点面的行为链检测"
+ },
+ "x-mitre-detection-strategy--cf6a38ec-4c16-4c7f-8730-6e04f6dd6e67": {
+  "name": "基于行为的 Windows 注册表修改检测"
+ },
+ "x-mitre-detection-strategy--dcbcea6d-e822-4fe3-b9df-86d4d9cd5667": {
+  "name": "针对 Launch Daemon 创建或修改（macOS）的检测策略"
+ },
+ "x-mitre-detection-strategy--22331b2d-e8a1-4820-ae6b-7d04f24f7df7": {
+  "name": "针对云基础设施发现的检测策略"
+ },
+ "x-mitre-detection-strategy--90123c20-ff3d-4034-9a5f-905444bb0311": {
+  "name": "检测对浏览器凭据存储的可疑访问"
+ },
+ "x-mitre-detection-strategy--9050bfb8-840d-4464-b4e8-7a0dbdece715": {
+  "name": "针对利用搜索顺序劫持进行路径拦截以劫持执行流的检测策略"
+ },
+ "x-mitre-detection-strategy--2d5f2445-a395-4012-b378-c953f2df7353": {
+  "name": "跨平台通过文件与 Web 内容修改进行网站篡改"
+ },
+ "x-mitre-detection-strategy--ec3e5f66-a2b8-48ae-9adf-eb4f5014ba70": {
+  "name": "检测攻击者使用未使用或不受支持的云区域（IaaS）"
+ },
+ "x-mitre-detection-strategy--9f227978-8d56-406f-9d50-ef10aae1bf77": {
+  "name": "跨 Linux、Windows 和 macOS 检测 DHCP 欺骗"
+ },
+ "x-mitre-detection-strategy--5d244477-26e2-4b3a-b882-fd74e366e07d": {
+  "name": "检测远程服务会话劫持"
+ },
+ "x-mitre-detection-strategy--b79f47ca-4c42-4658-ba71-a6374778eb98": {
+  "name": "针对 Linux 上绑定挂载（Bind Mounts）的检测策略"
+ },
+ "x-mitre-detection-strategy--9c2a1b83-eec8-4d0c-a0b5-e5b561dbd68f": {
+  "name": "针对混淆文件或信息：二进制填充的检测策略"
+ },
+ "x-mitre-detection-strategy--abb052c6-4edd-4592-9b9b-e53a55ac53b8": {
+  "name": "通过服务器行为与文件执行链检测 Web Shell"
+ },
+ "x-mitre-detection-strategy--7aa7d45f-64da-4f16-a905-b4881da82c62": {
+  "name": "通过 AD 对象变更与文件活动检测组策略修改"
+ },
+ "x-mitre-detection-strategy--20d79eae-0c09-410a-b99a-f8cb6ec9153c": {
+  "name": "针对 Linux 和 macOS 上日志文件清除的行为检测"
+ },
+ "x-mitre-detection-strategy--3e5e2bda-40c0-4aea-90f1-8fc52096ad5e": {
+  "name": "检测为侦察而访问本地浏览器痕迹"
+ },
+ "x-mitre-detection-strategy--84b5d372-eedb-4b69-bf78-9d4815e2b2b7": {
+  "name": "跨平台检测对私钥文件的可疑访问与导出尝试"
+ },
+ "x-mitre-detection-strategy--c377533f-702a-4e82-a254-9855b9362c22": {
+  "name": "检测服务器"
+ },
+ "x-mitre-detection-strategy--7ff1f384-2373-4ea9-9311-1587b520a5c4": {
+  "name": "针对基于 WinRM 的远程访问的行为检测"
+ },
+ "x-mitre-detection-strategy--267a6c25-8d34-47ae-8357-9ae173adaa13": {
+  "name": "检测基于蓝牙的数据渗出"
+ },
+ "x-mitre-detection-strategy--cff5ca37-cc4a-431c-b481-d0ccabbf6980": {
+  "name": "跨平台默认账户滥用检测"
+ },
+ "x-mitre-detection-strategy--9c4b0b07-df7f-4697-8cd1-0b95ff6a6361": {
+  "name": "检测滥用 Windows 时间提供程序实现持久化"
+ },
+ "x-mitre-detection-strategy--07fb6847-efcb-426e-9344-bfc9dfcdebd4": {
+  "name": "针对通过 Trap 实现事件触发执行（T1546.005）的检测策略"
+ },
+ "x-mitre-detection-strategy--da2107bd-4733-4d0b-a35c-33f7883e9ae9": {
+  "name": "针对劫持执行流：动态链接器劫持的检测策略"
+ },
+ "x-mitre-detection-strategy--2250ba04-1b95-4c72-9373-d87e8c1d7869": {
+  "name": "T1136.001 检测策略 - 跨平台本地账户创建"
+ },
+ "x-mitre-detection-strategy--6b173b90-4b1d-4de8-a506-95b8b10921a7": {
+  "name": "检测搜索威胁情报厂商数据"
+ },
+ "x-mitre-detection-strategy--f54b8799-acfd-4df4-a2c4-e83071750bde": {
+  "name": "针对输入注入的检测策略"
+ },
+ "x-mitre-detection-strategy--2cbbc0b5-2c4b-4861-91d3-1f64a47ef191": {
+  "name": "通过可移动介质中继进行跨主机 C2"
+ },
+ "x-mitre-detection-strategy--4c5608c3-b5ca-4c8e-932e-ad6c55683cd1": {
+  "name": "检测电子邮件账户"
+ },
+ "x-mitre-detection-strategy--2db51eaa-3407-4ad0-a45e-86ebf5f2abac": {
+  "name": "检测 Windows 上的 LLMNR/NBT-NS 投毒与 SMB 中继"
+ },
+ "x-mitre-detection-strategy--682ddf59-6de3-4765-a1c0-09b539fa5d4f": {
+  "name": "多平台文件与目录权限修改检测策略"
+ },
+ "x-mitre-detection-strategy--793c70fb-bc7a-4a77-95aa-7b0c583f10b4": {
+  "name": "通过访问与转储序列检测从 LSASS 内存转储凭据"
+ },
+ "x-mitre-detection-strategy--434d1a09-6a53-43ae-8f8c-e0eb853c4a25": {
+  "name": "检测恶意 IDE 扩展的安装/使用及 IDE 隧道"
+ },
+ "x-mitre-detection-strategy--7bbdcd3b-241e-4ec8-ab43-6bd2c34ae77d": {
+  "name": "检测主动扫描"
+ },
+ "x-mitre-detection-strategy--206790b2-16bc-46db-a605-8bcff576c161": {
+  "name": "针对具有可疑执行模式的垃圾代码混淆的检测策略"
+ },
+ "x-mitre-detection-strategy--9646aa18-4ebf-43c8-bf4c-670063bc5ef8": {
+  "name": "针对滥用提权控制机制（T1548）的检测策略"
+ },
+ "x-mitre-detection-strategy--78aa8d17-c96f-4ba9-b431-f91157f38553": {
+  "name": "针对 T1134.002 使用令牌创建进程（Windows）的行为链检测"
+ },
+ "x-mitre-detection-strategy--bc8cd246-1521-4643-a07e-428d45093b38": {
+  "name": "Setuid/Setgid 权限滥用检测（Linux/macOS）"
+ },
+ "x-mitre-detection-strategy--63135c50-7c7a-4a44-a053-28abd2388f21": {
+  "name": "通过注册表与进程痕迹检测 Windows 上 Winlogon 辅助 DLL 滥用"
+ },
+ "x-mitre-detection-strategy--dbaaa57a-ef28-44c0-bc56-25bc20dc8f28": {
+  "name": "针对基于 DCOM 的远程代码执行的多事件行为检测"
+ },
+ "x-mitre-detection-strategy--84dfca59-e541-48a8-bb95-d7581a8f48d2": {
+  "name": "通过多账户认证失败检测分布式密码喷洒"
+ },
+ "x-mitre-detection-strategy--bfb5cb12-7025-44c3-9a2d-79cfe42ecf54": {
+  "name": "通过向中间基础设施的出站中继检测外部代理行为"
+ },
+ "x-mitre-detection-strategy--8b2a91cd-4a15-4b25-9b75-581298f3ef82": {
+  "name": "检测通过 Web 门户篡改收集凭据"
+ },
+ "x-mitre-detection-strategy--33040f26-43e3-4c1d-8557-02f306bb028f": {
+  "name": "检测电子邮件地址"
+ },
+ "x-mitre-detection-strategy--ce26e75b-f8bf-45d5-b0fd-601e3d8fd800": {
+  "name": "检测鱼叉式语音钓鱼"
+ },
+ "x-mitre-detection-strategy--bbda89d6-a007-4ba9-bfd0-cb03344fc540": {
+  "name": "检测书面内容"
+ },
+ "x-mitre-detection-strategy--90b5ad4f-44bf-46e2-ac66-6e81e573e3fb": {
+  "name": "通过本地哈希缓存访问检测缓存域凭据转储"
+ },
+ "x-mitre-detection-strategy--cf33849d-67f4-418e-9a41-6a6c082e576a": {
+  "name": "针对向 Authorized Keys 注入 SSH 密钥的检测策略"
+ },
+ "x-mitre-detection-strategy--85849149-b36f-4562-9478-65c4e8f97dec": {
+  "name": "针对虚拟机发现的检测策略"
+ },
+ "x-mitre-detection-strategy--fb15f9a5-8561-4c67-b50b-f72039ff9a44": {
+  "name": "检测网络安全设备"
+ },
+ "x-mitre-detection-strategy--d65ea5cc-52c6-4ec6-98a8-eef0be23ee72": {
+  "name": "针对 Windows 上 IFEO 注入的检测策略"
+ },
+ "x-mitre-detection-strategy--9407410b-7f35-4d32-be3c-e48ea36573d9": {
+  "name": "检测通过 Odbcconf 代理执行恶意 DLL"
+ },
+ "x-mitre-detection-strategy--cf1329da-a87c-42bb-8950-58fcf36b9b9b": {
+  "name": "检测搜索引擎"
+ },
+ "x-mitre-detection-strategy--38ea871a-2cae-4274-85a6-c80588166cfb": {
+  "name": "检测业务关系"
+ },
+ "x-mitre-detection-strategy--210a0dee-7c4b-4948-80ed-67c3e04886c2": {
+  "name": "针对临时提升云访问权限滥用（T1548.005）的检测策略"
+ },
+ "x-mitre-detection-strategy--e9ee6ab5-333b-4cea-8637-23360d904472": {
+  "name": "针对 T1125 视频捕获的行为链、平台感知检测策略"
+ },
+ "x-mitre-detection-strategy--8373cca7-feb8-44e4-94d0-fc39ea3586d7": {
+  "name": "针对 Windows 上进程替身（Process Doppelgänging）的检测策略"
+ },
+ "x-mitre-detection-strategy--172cff54-a89b-4207-abc2-8d0c9601025e": {
+  "name": "针对系统网络配置发现的行为检测"
+ },
+ "x-mitre-detection-strategy--ceac3cb0-d9eb-4466-810f-4acbf793e980": {
+  "name": "针对修改云计算基础设施：删除云实例的检测策略"
+ },
+ "x-mitre-detection-strategy--9f2af07f-ef27-4737-b262-a8862faebffa": {
+  "name": "检测代码仓库"
+ },
+ "x-mitre-detection-strategy--07b1eb42-4f7b-4420-972e-2f28f17c0fa0": {
+  "name": "针对利用可执行安装程序文件权限弱点劫持执行流的检测策略"
+ },
+ "x-mitre-detection-strategy--05cb564b-df98-44d8-8982-176136eef26d": {
+  "name": "针对通过二进制替换或注册表修改劫持辅助功能的检测策略"
+ },
+ "x-mitre-detection-strategy--c0a23061-c4f3-4003-9e81-e81d50b6d1e2": {
+  "name": "检测用于僵尸网络、代理劫持（Proxyjacking）或扫描目的的过度或未经授权的带宽使用"
+ },
+ "x-mitre-detection-strategy--fdda430c-e4f6-43ce-95d6-0f97253ff6a2": {
+  "name": "跨平台用户或账户信息枚举"
+ },
+ "x-mitre-detection-strategy--5c44619a-da36-4bbd-9730-efceacf2409f": {
+  "name": "检测代理基础设施搭建与流量桥接"
+ },
+ "x-mitre-detection-strategy--8582f5e6-44a5-4950-b7e8-a3e1b6d58d63": {
+  "name": "针对命令与脚本解释器滥用的行为检测"
+ },
+ "x-mitre-detection-strategy--09caebdc-2ce4-4698-a40c-d91cb65f9720": {
+  "name": "用户发起的通过包管理器安装恶意库（T1204.005）"
+ },
+ "x-mitre-detection-strategy--d340864e-5685-48d5-8a78-3c55a7169207": {
+  "name": "通过行为链检测 Windows 上的事件日志清除"
+ },
+ "x-mitre-detection-strategy--aae40136-73f7-45e8-a37f-104ae7155bbe": {
+  "name": "T1136.002 检测策略 - 跨平台域账户创建"
+ },
+ "x-mitre-detection-strategy--e32dbff1-9d06-4495-b815-48463481581b": {
+  "name": "针对扩展属性滥用的检测策略"
+ },
+ "x-mitre-detection-strategy--3268135a-a73f-4594-95e6-6ea8813a39d3": {
+  "name": "检测员工姓名"
+ },
+ "x-mitre-detection-strategy--cad3cfb6-1838-4fa3-abfc-aa590f613436": {
+  "name": "针对通过 SaaS CI/CD 工作流执行投毒流水线的检测策略"
+ },
+ "x-mitre-detection-strategy--3414f3b8-17a2-438c-8bbc-a261a04da8bc": {
+  "name": "检测通过 API、脚本与 CLI 枚举进行域信任发现"
+ },
+ "x-mitre-detection-strategy--cbf5f016-0801-4861-93d8-d372645778d5": {
+  "name": "检测伪造的 Kerberos 黄金票据（T1558.001）"
+ },
+ "x-mitre-detection-strategy--da5ff985-fd0d-438f-8498-c8dc195f741a": {
+  "name": "自动化数据渗出检测策略"
+ },
+ "x-mitre-detection-strategy--87cb2c80-54e1-4ea1-abd7-81a096eb155e": {
+  "name": "检测客户端配置"
+ },
+ "x-mitre-detection-strategy--3efcd3e4-9238-4686-990b-27ac110dccfd": {
+  "name": "通过进程、文件与网络行为检测 IDE 隧道"
+ },
+ "x-mitre-detection-strategy--c3c32822-80b2-4399-8e82-15cefaa80333": {
+  "name": "通过文件名与执行上下文检测从右向左覆盖（RLO）伪装"
+ },
+ "x-mitre-detection-strategy--5c228796-349e-4d7e-a3ca-51a5f8cbf294": {
+  "name": "检测恶意软件"
+ },
+ "x-mitre-detection-strategy--6c59d987-c339-4743-bdb0-0eb21285deb7": {
+  "name": "针对伴随脚本执行与投递行为的 SVG 走私的检测策略"
+ },
+ "x-mitre-detection-strategy--a53d62ae-b269-45e8-9937-17def4e28663": {
+  "name": "针对 T1542.002 预操作系统启动：组件固件的检测策略"
+ },
+ "x-mitre-detection-strategy--7225a3bd-f235-4c13-a236-3c6b9a3d445c": {
+  "name": "跨平台痕迹指标清除的行为检测"
+ },
+ "x-mitre-detection-strategy--5d368ccf-2946-4a01-bfae-c18064b6187a": {
+  "name": "针对通过对称加密的非 C2 协议渗出数据的行为检测策略"
+ },
+ "x-mitre-detection-strategy--e04f7ddf-6a1e-4731-afd6-5edb74f4c624": {
+  "name": "检测通过 Office 模板宏注入或注册表劫持实现持久化"
+ },
+ "x-mitre-detection-strategy--6e53a352-9654-41fe-bf43-50e6b23a4ac1": {
+  "name": "检测虚拟专用服务器（VPS）"
+ },
+ "x-mitre-detection-strategy--3d515fbc-0ebf-4a99-b191-b6ee604acb1f": {
+  "name": "对 Confluence 文档的编程化且过量的访问"
+ },
+ "x-mitre-detection-strategy--5f53739d-3a41-4f7e-a83d-219a0c64e7a1": {
+  "name": "针对 T1550.003 - 票据传递（Pass the Ticket）（Windows）的检测策略"
+ },
+ "x-mitre-detection-strategy--e9a74ecb-cc65-4c21-ae40-850e3317c248": {
+  "name": "针对容器管理命令滥用的检测策略"
+ },
+ "x-mitre-detection-strategy--33ab9d0c-5671-48e6-8465-f80560909c65": {
+  "name": "跨权限上下文递归枚举文件与目录"
+ },
+ "x-mitre-detection-strategy--98d6523f-54c5-4a24-a758-333caa833967": {
+  "name": "针对跨操作系统平台动态解析的检测策略"
+ },
+ "x-mitre-detection-strategy--45665335-5bf0-4553-9398-ea40d550cbff": {
+  "name": "检测具有可疑命名与执行特征的伪装任务或服务"
+ },
+ "x-mitre-detection-strategy--4554ad15-dc0a-44f8-92b6-b8e7dc64385e": {
+  "name": "针对通过远程线程排队进行异步过程调用（APC）注入的行为检测"
+ },
+ "x-mitre-detection-strategy--69c06a1c-5b36-432c-871b-813957b3c678": {
+  "name": "针对在 IaaS 与网络设备中通过镜像进行流量复制的检测策略"
+ },
+ "x-mitre-detection-strategy--0548423e-c893-4474-9e5d-7fdd7c2a0a71": {
+  "name": "针对 Plist 文件修改（T1647）的检测策略"
+ },
+ "x-mitre-detection-strategy--680956cb-d8c6-447c-99b4-82865fb89255": {
+  "name": "T1127.003 受信开发者工具代理执行：JamPlus (Windows) 的行为链检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--3de93376-739e-4842-875d-d6e9948db8d4": {
+  "name": "通过注册表注入实现 AppCert DLLs 持久化的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--f66a9e86-49fb-4de6-963d-0e357a77f679": {
+  "name": "跨平台邮件转发规则滥用检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--11f7fa69-2da4-4280-90d2-abc2f0722683": {
+  "name": "数据外泄前数据暂存的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--7b0ea292-22f5-4963-b1c2-0d396fb17619": {
+  "name": "窃取或伪造身份验证证书的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--bbeacdc8-c14c-44f1-9ace-fc8282a05c67": {
+  "name": "通过 Entra ID 或 MFA 平台进行可疑设备注册的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--7c45d09a-030e-4b30-b2d9-41fee3daa293": {
+  "name": "跨平台系统网络连接发现的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--7f3e2c35-7394-4cc6-baef-73a830930953": {
+  "name": "攻陷基础设施的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--2556841e-474a-45c0-b827-4f5db6dcca31": {
+  "name": "检测通过容器与磁盘映像文件绕过 Web 标记 (MOTW)",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--2fed2eb7-2b3e-494f-9154-b996090b5a1e": {
+  "name": "削弱加密：禁用网络设备加密硬件的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--abf6c96c-09f3-4bea-a5b7-1177f99881bc": {
+  "name": "T1542 操作系统前引导 (Pre-OS Boot) 的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--62b445ed-7d9d-4c1a-8d4e-6c742ec1b0e2": {
+  "name": "在主机上构建镜像的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--65c18137-cad3-4fd3-8b24-22a61850c8a1": {
+  "name": "通过远程内存映射进行 PE 注入的行为检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--1d738832-3de4-45f0-98e5-ac37642619e8": {
+  "name": "T1218.012 Verclsid 滥用的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--a1d413d7-0a28-45ce-9e4d-d250b4b6a492": {
+  "name": "攻陷账户的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--77078baf-96f1-413a-bf5b-96b42486e26c": {
+  "name": "系统服务：Launchctl 的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--02aecf08-08b1-4f08-9272-c1fc98b5f72e": {
+  "name": "僵尸网络的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--ca871237-8615-47b7-9981-92d1d920d346": {
+  "name": "网络设备上 CLI 滥用的行为检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--653b555a-590f-40e4-9400-f14d0ed92252": {
+  "name": "检测为收集凭据而访问并解析 .bash_history 文件",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--a92f4b5f-9d0d-461f-8581-a50975f5e07a": {
+  "name": "检测 XPC 服务滥用 (T1559.003)",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--7f5dde79-7872-48dd-8718-cd2e10d7cbfc": {
+  "name": "T1497 虚拟化/沙箱规避的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--769615c5-08d5-4f51-8f3b-7ac2f1febce8": {
+  "name": "可疑利用 Web 服务进行 C2 的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--b34a9911-8261-45b4-af09-3885f9b82cc6": {
+  "name": "跨平台访问不安全凭据文件的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--510a02c8-4341-40ab-8b57-bd678c411ac0": {
+  "name": "通过 DNS 计算进行动态解析的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--8d06728f-5b50-4925-a05c-4d56b17ba5d2": {
+  "name": "通过可疑 HTA 或脚本调用检测基于 Mshta 的代理执行",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--f3cd8bda-d509-4452-a119-3feebb8f05b6": {
+  "name": "T1547.015 – macOS 登录项的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--5a1ada5b-5729-45d5-8b3d-f6fa7d2a3352": {
+  "name": "暂存能力的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--020447ec-f030-4b95-a187-255177b69d9f": {
+  "name": "链接目标的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--6368178a-04c5-490b-96d5-f12dcccd0497": {
+  "name": "多阶段命令与控制通道的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--e767f434-dda3-41fe-a9ea-e7aaae251e61": {
+  "name": "金融窃取的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--99bdd6d6-ebef-40e2-83d2-2f39408c82e3": {
+  "name": "多平台执行护栏环境验证检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--c4f5335d-8e85-4b45-86b1-1d5a8cc6523d": {
+  "name": "云存储对象发现的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--e1854c9f-2b70-4311-9a46-a420f6c0b6d0": {
+  "name": "伪造 Web Cookie 的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--170a958d-79a6-433a-8ab0-c8d654e2ca86": {
+  "name": "日志枚举的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--0b06e42c-ab1c-4fb7-834b-10293e904173": {
+  "name": "T1134.001 访问令牌操纵：Windows 上令牌仿冒/窃取的行为链检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--ac9c6b7c-bf94-4eeb-926c-f576673c0a14": {
+  "name": "向代码仓库外泄数据的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--f6e514c0-120a-4ab1-ae3d-aa2de14e4324": {
+  "name": "利用有效账户进行远程云登录的行为检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--68b7c978-74e4-4f87-a953-2a4e752f56c2": {
+  "name": "端口敲门 → 规则/守护进程变更 → 首次成功连接 (T1205.001)",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--ae3cb4bc-da0a-4e5b-b4ad-96617eccefaf": {
+  "name": "LNK 图标走私的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--71b2e30c-f793-42a8-85be-f782c908772c": {
+  "name": "Web 服务的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--58bdb4c6-510b-4ffc-9703-852614116ac8": {
+  "name": "T1528 - 窃取应用程序访问令牌的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--e62ddd99-6357-4388-b3df-d7d7b6984630": {
+  "name": "鱼叉式钓鱼附件的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--cd0c92f4-2345-40ae-aa73-ccc1eb78eb14": {
+  "name": "IaaS/IdP/SaaS 中追加云凭据的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--70c9f174-2e96-4086-b59c-d2358e434f8e": {
+  "name": "用户执行 – 多攻击面行为链（文档/链接 → 助手/解包器 → LOLBIN/子进程 → 出站）",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--c8b4a2e4-386f-45b3-b32a-8ca4113e5592": {
+  "name": "通过 UI 或消息篡改对内部网站与系统内容进行毁损",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--c48fd7e3-fbfb-4ab5-b577-12cc0be21f2c": {
+  "name": "隐藏用户账户的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--d9cf8032-7b53-4251-8519-a7ccbf6a027a": {
+  "name": "T1134.003 制作并仿冒令牌 (Windows) 的行为链检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--69b08c7a-c2ab-4e56-935d-ec28143372de": {
+  "name": "检测对 SYSVOL 中组策略首选项 (GPP) 凭据的访问与解密",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--d187b646-5fb3-4d65-a190-e25e2131f802": {
+  "name": "经非对称加密的非 C2 协议外泄的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--880c0a88-bbd5-4d71-b8bd-72fbab7d58b2": {
+  "name": "通过 API、CLI 与脚本接口进行云账户枚举",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--a27b9b6b-b4b9-425c-885b-ab52834f0974": {
+  "name": "音视频内容的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--309ca3cd-d3f0-4aea-8932-558550aa89f4": {
+  "name": "攻击者进程发现行为的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--552a7d85-4ac4-48cd-9072-61a4c6b2c682": {
+  "name": "检测网络提供程序 DLL 注册与凭据捕获",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--99e60eb7-f2fa-4423-8c51-29832cd6e7ef": {
+  "name": "检测经 WmiPrvSE 进程与 MOF 编译利用 WMI 事件订阅实现持久化",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--eda2c394-d2de-4555-be9d-b4de826441ee": {
+  "name": "CDN 的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--5463d676-c300-4ab8-9980-d3ed37ac4723": {
+  "name": "通过输入与痕迹探测检测基于用户活动的沙箱规避",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--e769419e-39f6-478d-97b8-cf0672fa635b": {
+  "name": "通过滥用 SaaS 劫持云服务的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--1f7b4b6e-17ab-446f-ac4e-5a1e79569dd3": {
+  "name": "云账户的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--ea1f5423-64b9-44eb-824f-251aa0faccd2": {
+  "name": "攻击者滥用软件部署工具的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--beb3a98c-f1a4-434a-81e7-29d178b14db2": {
+  "name": "经 C2 通道外泄的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--eb751740-80cd-4ec1-a989-8691bf7f2039": {
+  "name": "T1134.004 访问令牌操纵：父 PID 欺骗 (Windows) 的行为链检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--cd39aee1-03f0-489f-a800-ce00c6be617f": {
+  "name": "收集受害者组织信息的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--44f32d03-50ce-480f-b531-481bcc6dc0a8": {
+  "name": "伪造 Web 凭据的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--5dab1bc7-89e2-4fe4-ae30-40b550d0daf4": {
+  "name": "多因素认证请求生成 (T1621) 的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--110a934e-881a-4e42-9619-b6de30f4a39e": {
+  "name": "主机软件二进制文件被攻陷的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--a9b4dd72-07f2-4fd5-b46b-2fe9f6945f14": {
+  "name": "检测聊天消息中共享的不安全凭据",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--72b209e2-8c65-4217-8532-fabd0cb54ae5": {
+  "name": "滥用 PowerShell 执行任意代码",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--61585647-dcc0-4c46-9333-c59796997826": {
+  "name": "通过注册表与执行关联检测 Windows 默认文件关联劫持",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--b511a320-18a6-46ff-9588-85065c44312f": {
+  "name": "Linux 上 VDSO 劫持的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--1fba9af9-8087-4958-90c0-ecdd8c887f6f": {
+  "name": "基于文件传输协议的 C2 (FTP、FTPS、SMB、TFTP) 检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--7c1262bb-c0d1-4e0c-bab8-a232f7bed9d5": {
+  "name": "选择性排除的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--13a856f3-66b2-4ab7-b73f-2a26e712e77f": {
+  "name": "以获取凭据访问为目的的漏洞利用检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--f0ef3932-5f60-4dfc-9725-8639d67349cc": {
+  "name": "通过 macOS emond 实现事件触发执行的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--e3718a7a-77b3-4790-99ba-aba7703815fd": {
+  "name": "单向 Web 服务命令通道的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--9031c511-d7ff-410e-9144-d3afee390210": {
+  "name": "收集受害者网络信息的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--ee73dd97-cf1a-4220-a7cf-52d864811bb4": {
+  "name": "远程服务利用 – 多平台横向移动检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--acc27d20-8aad-42ce-b928-6cda3c22e51b": {
+  "name": "通过受信账户进行内部鱼叉式钓鱼",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--7e71997a-80b5-4d0d-807e-472116b46b77": {
+  "name": "通过服务文件权限弱点劫持执行流程的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--8febbfe8-91ae-4625-8fc7-656639b90a11": {
+  "name": "检测注册表与启动文件夹持久化 (Windows)",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--2f7a5ebd-e025-4822-aed2-46fc3ec1a0a9": {
+  "name": "检测受信关系滥用（第三方与委派管理员访问）",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--7ad75a00-94f0-4deb-8642-df227a2a8ac6": {
+  "name": "T1136.003 - 跨 IaaS、IdP、SaaS、Office 创建云账户的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--de120f6a-c19b-4346-b62f-c8cd95fcb291": {
+  "name": "跨操作系统平台本地组枚举的行为检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--3ada68d4-a4ab-4c06-98ce-33aaef54a115": {
+  "name": "搜索开放网站/域名的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--d6c4cc3b-6875-4288-8193-bf4c864560ab": {
+  "name": "账户操纵行为链检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--ed9ef930-ec1f-4e57-a110-9b647e2ca195": {
+  "name": "经替代协议外泄的行为检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--df1da8e4-cabf-42f0-8f5f-2fa8086b1423": {
+  "name": "内核模块与扩展自启动执行的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--e98d37af-727b-44a7-a72b-cdcf8a481a12": {
+  "name": "T1678 - 延迟执行的多平台检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--909c86ca-ddd0-4e96-8464-39f5f80ef20e": {
+  "name": "伪造 GUI 凭据提示的行为检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--3a114d11-0850-4c33-b828-359e59b15250": {
+  "name": "未授权网络防火墙规则修改的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--cb821d3c-ede3-43a4-915b-f779b04318f6": {
+  "name": "工具的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--f6dd18b4-8534-4883-8d57-80655418bed4": {
+  "name": "基于 USB 的数据外泄检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--7ee8426e-2b65-44ed-b6d4-3800b92adf2e": {
+  "name": "通过 Windows KernelCallbackTable 劫持执行流程的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--3f4c871c-9ddb-41da-accd-ff5bcbfe37d4": {
+  "name": "搜索封闭来源的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--7578b2e3-2b9c-491d-9157-699a4bd6a136": {
+  "name": "滥用 Systemd 定时器进行计划执行的行为检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--7ee73f2e-76b2-4f00-bcc0-7fb79d31d344": {
+  "name": "跨平台钓鱼的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--c3924c07-255d-4df9-8357-a47e68c04bbb": {
+  "name": "T1542.004 操作系统前引导：ROMMONkit 的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--fafb9522-c185-48e0-b0a5-e65887f5deb4": {
+  "name": "通过 hh.exe 执行可疑编译 HTML 文件的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--be288974-9b74-41c1-8c43-66aef169255a": {
+  "name": "计算资源劫持的多平台行为检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--00060b87-7f99-45aa-9553-a4d94139195c": {
+  "name": "通过 CLI 与 SMB 断开连接移除网络共享连接的行为检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--407286ed-c904-412a-9f2d-7426ea7304a4": {
+  "name": "通过中继节点链、洋葱路由与网络隧道实现的多跳代理行为",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--1439efe8-4d10-4ce8-8727-458db69bae85": {
+  "name": "多平台日志关联的暴力破解认证失败检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--4a89bf52-7be1-405d-8d02-462e52553bc5": {
+  "name": "Unix Shell 执行的行为检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--75281b94-735d-4051-b400-a42205783af9": {
+  "name": "检测通过恶意邮件触发的 Outlook 自定义表单持久化",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--4a11abbc-9637-4d2e-a8ac-39fef2c0256d": {
+  "name": "检测通过 USB 硬件 (TinyPilot、PiKVM) 进行远程访问",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--cce3ccaf-87ac-47ae-b9e2-6507b91cb63d": {
+  "name": "数据操纵的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--b38e114c-f00f-4c70-9623-267da801625a": {
+  "name": "检测进程间通信滥用 (T1559)",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--e17b2809-7534-4749-9bd8-95fdb24e4891": {
+  "name": "通过网络流量分析检测混淆的 C2",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--79eb1874-4762-461b-a748-df85e61f3216": {
+  "name": "来自网络共享驱动器的数据的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--f33df6a5-7f05-415c-9971-18918c8ed4fa": {
+  "name": "Web 服务的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--536eed5d-a4b6-4377-a936-90283bb1b25c": {
+  "name": "修改网络设备系统镜像的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--07669925-383b-455b-a3e2-3a79e18eed27": {
+  "name": "跨操作系统平台劫持执行流程的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--ad21a251-e824-4368-a04c-8a480ee653cc": {
+  "name": "伪造 User-Agent 的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--be7a4dda-a46a-4245-8837-e69946a79d3f": {
+  "name": "Lua 脚本滥用的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--6ab338c4-9ed3-4f63-9462-b13cea5a68b0": {
+  "name": "工具指标清除 - 反病毒规避后修改的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--ee7bd8ff-fbfd-4bb2-9d23-cf3f6ed342c7": {
+  "name": "用户执行 – 恶意镜像（容器与 IaaS）– 拉取/运行 → 启动 → 异常行为 (T1204.003)",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--81ac26e4-c4f6-4368-842f-50033ca8522b": {
+  "name": "检测通过容器运行时或集群操纵实现持久化或提权的容器服务",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--a6245075-b59f-46cf-8b76-e8d95c378a22": {
+  "name": "跨平台有效账户滥用的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--cc8324a7-03d0-47d1-8e2b-3caec44fc129": {
+  "name": "非标准端口的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--5ff1a219-e2d2-4e4b-bb32-346fcaffa52b": {
+  "name": "社交媒体账户的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--8e003575-5a6f-458d-be35-a8606c9b7dea": {
+  "name": "Windows 进程镂空 (Process Hollowing) 的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--64fc24f5-0428-4956-a328-2e76e0af984e": {
+  "name": "以权限提升为目的的漏洞利用检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--0f320fd9-cf15-4fd6-bcb3-c3a52760fe88": {
+  "name": "macOS 资源分支 (Resource Fork) 的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--655a8556-c82d-4148-b52a-7bc48fe7ce20": {
+  "name": "通过多平台审计关联检测账户访问移除",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--630ea167-088b-4958-ac19-0fc59310e262": {
+  "name": "通过跨服务复用泄露凭据检测撞库攻击",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--e3758cbb-5dd9-4aad-b848-0539a8c56307": {
+  "name": "混淆文件或信息的行为检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--eccad822-4f5b-4337-8c8b-825cf617f853": {
+  "name": "跨平台 MFA 修改或禁用的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--00a515dc-e3be-4349-9c61-65a5c0ce815d": {
+  "name": "通过异常登录与编程化访问检测远程邮件收集",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--32af4177-8c33-43d8-8e2c-9e11ac6dd451": {
+  "name": "T1505.004 - 恶意 IIS 组件的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--fbf8f0b2-3587-45c3-be8d-d495384075be": {
+  "name": "通过元数据与行为上下文检测无效代码签名执行",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--732ae9e0-1ff8-40bf-bc13-ea3a0bb6fee0": {
+  "name": "生成内容的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--55321f9d-1646-45b9-b23e-e3c0fe105400": {
+  "name": "隐藏虚拟实例执行的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--380da3b2-d92f-4361-b187-cedc8a118e0f": {
+  "name": "多态代码变异与执行的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--72742281-7457-4124-a277-7f3cf5e23f4e": {
+  "name": "密码策略发现 – 跨平台行为链分析",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--c5e3823f-5ee0-43db-b6fa-b63d6587b24c": {
+  "name": "跨平台事件触发执行的行为检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--f09870f8-77d4-4b58-8bda-2b3f2e29c897": {
+  "name": "检测通过事件触发执行修改 Shell 配置实现持久化",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--b45310bb-d520-43b3-8758-e9d5a9738429": {
+  "name": "通过诱饵文件与出站 NTLM 检测强制 SMB/WebDAV 认证",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--d32792e2-f927-492b-91bf-ac478cf64868": {
+  "name": "T1134.005 访问令牌操纵：SID-History 注入 (Windows) 的行为链检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--f0f7aa93-71bc-4c55-9f96-9c74a7d45a83": {
+  "name": "网络边界桥接的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--d080a1b1-5ad1-45a1-8f7b-b736986c20d9": {
+  "name": "多平台文件加密造成破坏的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--8577b89d-01e2-4423-8657-caff7ed22737": {
+  "name": "跨操作系统平台通过阻止命令历史日志削弱防御的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--73cde34a-247f-4ebc-87a5-ab6a9c400f40": {
+  "name": "通过证书、注册表与属性操纵检测信任控制破坏",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--2dd0f2ef-2c31-4b11-a507-91067bb61787": {
+  "name": "macOS AuthorizationExecuteWithPrivileges 提权提示检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--440ba398-6224-4273-b63c-d0efd0fe612a": {
+  "name": "固件的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--08861418-398c-4972-8850-5e11f2d32944": {
+  "name": "跨操作系统平台加密通道的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--1525b951-a0fb-42ac-97b7-05ac6f412020": {
+  "name": "通过注册表与 LSASS DLL 加载检测 LSA 认证包持久化",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--0a931f22-4820-48aa-8051-056da15a6183": {
+  "name": "系统二进制代理执行：Regsvr32 的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--6ab41bc0-2d89-4173-8149-728fbc2698b6": {
+  "name": "向文本存储站点外泄的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--967d05e3-0d40-40d9-a94e-f32e17397404": {
+  "name": "软件的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--c922d994-74bd-4847-a870-c0ae216318c9": {
+  "name": "跨平台输入捕获的行为检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--ec33e12c-e0f1-426d-a453-fa5ae4d3cf9a": {
+  "name": "跨操作系统平台语音鱼叉式钓鱼的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--4b8278b5-5749-4a2d-94b1-5129e43a7455": {
+  "name": "漏洞利用的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--a21019ad-f6d2-4806-be7b-01ba27c63147": {
+  "name": "跨操作系统平台通过禁用或修改工具削弱防御的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--d16b47ab-e157-4538-8264-3fa9870a0e02": {
+  "name": "社交媒体的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--34fb7d2b-f5be-45a2-9cdc-811ae843e379": {
+  "name": "检测 SaaS 环境中对 CRM 数据的可疑访问",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--78340b60-535e-4f2e-a376-c6fcc53a3c4a": {
+  "name": "通过注册表与 DLL 加载关联检测 Windows COM 劫持",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--500c6151-e3d6-4c3e-8d46-6e58df27f497": {
+  "name": "凭据的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--77d3b532-9c4f-4f9f-9581-3009b201435d": {
+  "name": "被攻陷的软件/更新链（安装器/写入 → 首次运行/子进程 → 出站/签名异常）",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--c2648552-806d-40ec-8ea7-59f4e44983eb": {
+  "name": "伴随元数据不匹配与可疑路径的重命名合法工具执行",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--dcf2474e-0774-40da-b7e6-f4b60d0ea62f": {
+  "name": "通过进程与网络关联检测双向 Web 服务 C2 通道",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--1894c2d7-ce4f-4cfd-8644-decb1e14f0c5": {
+  "name": "针对客户端执行的漏洞利用 – 跨平台行为链（浏览器/Office/第三方应用）",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--95d3b171-2fc3-4e58-a5c9-4d98c3691c88": {
+  "name": "字典扫描的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--9a66295a-9f47-47a8-bda4-935cd311186a": {
+  "name": "邮件轰炸的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--e55f4e4b-80c0-4a2b-8202-659d29bbba33": {
+  "name": "检测通过 Outlook 主页利用实现持久化",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--e5448ab8-39d6-4364-ae7f-0459687251f7": {
+  "name": "跨操作系统平台基于非对称加密的加密通道检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--c8895822-a3d1-41eb-952f-c67b4673eee2": {
+  "name": "向云存储外泄的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--156ddd81-b3ae-4a79-8c4e-7a75b6fd994c": {
+  "name": "跨操作系统平台横向工具传输的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--26a281d7-c49e-4e36-ab51-26a757559cf0": {
+  "name": "通过未加引号路径进行路径拦截劫持执行流程的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--ad99833c-d2de-45be-a20b-9cbb6d797a35": {
+  "name": "安装数字证书的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--7eb6ccf9-8fb5-4c7d-8a2c-33081c3ddf81": {
+  "name": "检测 macOS 启动项修改",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--9d3a5603-ae0e-41fe-b2f5-7f3e44c903d7": {
+  "name": "系统语言发现的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--2cb544af-ef54-4376-9608-b399ad67d3d6": {
+  "name": "用于 C2 的非应用层协议的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--26580351-9bc3-4e03-b5ad-139d38303707": {
+  "name": "通过 Docker/Kubernetes 滥用容器 CLI 与 API (T1059.013)",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--a57c9ffb-8b18-4178-a07f-e596abe389bd": {
+  "name": "文件与脚本执行中隐写术滥用的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--6a5e5149-9118-44e1-8933-0d2a8839df3a": {
+  "name": "DNS 服务器的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--8bc479cf-727b-40d1-92d2-5755766d8544": {
+  "name": "云应用集成的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--776a998c-481d-4193-934e-c0af3968c392": {
+  "name": "通过异常 TLS、HTTP 头与端口不匹配关联检测协议或服务仿冒",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--106e32a9-29b7-4ec7-80cf-768662706490": {
+  "name": "用于环境发现的注册表查询检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--d96f78ad-21cd-45dc-940a-63b348894728": {
+  "name": "数据传输大小限制与分块外泄的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--8d30c115-84f7-4fcc-ba22-96cb092d8114": {
+  "name": "跨平台使用被盗 Web 会话 Cookie 的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--ba7a75c6-fcf5-4f36-8908-1fe1c30f690f": {
+  "name": "域账户滥用",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--9c03f003-b859-42c6-b16d-c0979dfc202b": {
+  "name": "通过 Regsvcs/Regasm 检测 .NET COM 注册滥用",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--6034b1c9-84df-4349-b34f-957ad8ec34d3": {
+  "name": "通过 .pth 与 Customize 文件实现 Linux Python 启动钩子持久化 (T1546.018)",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--d9e95391-5ea4-49af-a525-31655a72e470": {
+  "name": "通过安装根证书破坏信任控制的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--2f20791a-0c97-40c1-a09e-7925321f6f66": {
+  "name": "通过多事件关联检测 Windows 网络登录脚本滥用",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--253b632e-c4cb-4207-9b6a-58a35a07d2ea": {
+  "name": "跨平台端点资源耗尽与崩溃模式检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--48d80184-842f-419a-ab84-01030f866bd4": {
+  "name": "交付后编译 - 源代码到可执行文件转换的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--8c92a33f-ac2f-4ae9-9258-7a6a67922ad4": {
+  "name": "安全模式启动滥用的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--9daf5067-79c3-477c-bf41-813aada4770d": {
+  "name": "系统位置发现的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--6d2e2f19-f5ae-4ba0-aea7-52cc257169e5": {
+  "name": "VBA Stomping 的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--de9fde27-426b-4cb1-afcd-dbe1f7d4273f": {
+  "name": "检测滥用 Windows BITS 作业进行下载、执行与持久化",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--5fb0bb0d-cc9c-47aa-86f2-567b4ee642ff": {
+  "name": "T1127.001 受信开发者工具代理执行：MSBuild (Windows) 的行为链检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--d4586276-d188-44e7-a782-dded12dd352e": {
+  "name": "修改云计算基础设施：修改云计算配置的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--92203cb2-b7bd-4bc3-ab6f-9859a9856efc": {
+  "name": "通过 TLS SNI 与 HTTP Host 头不匹配实现的域前置行为",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--99758bfb-f638-43aa-a233-d27646452116": {
+  "name": "跨 Linux、Windows 与 macOS 的 ARP 缓存投毒检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--e2409f82-e24c-4bb9-ad44-b20d97fb7a5a": {
+  "name": "跨平台安全软件发现",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--1167a6c8-d735-4d5d-81f5-d81c6eafe239": {
+  "name": "隐藏窗口的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--ec75b064-d8f1-40a7-832c-0ef0bb40214d": {
+  "name": "T1127.002 受信开发者工具代理执行：ClickOnce (Windows) 的行为链检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--195e8d37-dfe6-4dc8-8012-dc80984872aa": {
+  "name": "Python 执行的跨平台行为检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--3fa3299e-a8c2-4555-890b-544314ae1e44": {
+  "name": "通过可疑文件移动检测恶意软件迁移",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--5b64c4fd-981e-4f34-97a4-9cd22d6f40e4": {
+  "name": "角色识别的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--d7106707-eee8-443f-b106-e7eff58a739e": {
+  "name": "C2 通道中数据编码的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--6f59bdfc-8352-4e6f-bef1-cc59b4e9b04d": {
+  "name": "事件触发执行：AppInit DLLs (Windows) 的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--29fad4dd-d6d7-4a99-8ae8-060e6d0544ec": {
+  "name": "信息钓鱼的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--440ddaf2-4e80-4699-90d7-0bdccdfeece6": {
+  "name": "资源劫持检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--1e08be7e-451c-4b10-9e65-b6dbf8d54b38": {
+  "name": "仿冒的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--095e0e71-498f-4403-a69f-5a6e4ff50503": {
+  "name": "建立账户的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--4e940cf7-b024-40d4-8b1f-f516588b08fa": {
+  "name": "获取能力的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--d3a3919f-2f04-49f4-808e-1f88538ee02b": {
+  "name": "通过注册表与执行链检测基于屏幕保护程序的持久化",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--4cd84c0e-b125-4576-9441-57c1664bf014": {
+  "name": "检测身份与云平台中的条件访问策略修改",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--bd0b0c98-3c22-4bf8-830b-2640b39eacea": {
+  "name": "修改云计算基础设施：创建云实例的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--f69d3378-a034-4709-9778-6efd2269e097": {
+  "name": "检测对云密钥管理存储的未授权访问",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--574968c5-ca49-4005-958f-c3ea5a78cfbc": {
+  "name": "检测通过 SaaS 平台对私有代码仓库的批量或异常访问",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--1764bbd5-67d1-4225-9c06-0d5aa74d056f": {
+  "name": "传输数据操纵的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--17c97a51-74c2-449c-bc95-cf6a7647fb83": {
+  "name": "通过解析 /etc/passwd 与 /etc/shadow 获取凭据",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--4dbd7441-627f-4d5a-a060-28fe6a8cbb9e": {
+  "name": "macOS 上 Launch Agent 创建或修改的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--38364d2d-7b25-4f75-9679-eca4dd18b213": {
+  "name": "跨操作系统平台系统服务的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--1806ad13-6fa8-4cb0-9d91-c8a989a1d9fe": {
+  "name": "Windows 命令行 Shell 执行的行为检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--452c12a6-e74d-4244-a298-e9adaaf23794": {
+  "name": "Linux 上 /proc 内存注入的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--4b5df4bb-4903-4c66-9900-30bc046447be": {
+  "name": "获取访问权限的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--ca16d7e8-77f3-4d0c-88a3-31696224ed67": {
+  "name": "对网络设备系统镜像打补丁的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--77e72172-b088-4a98-bddd-ca04cbfc32ee": {
+  "name": "检测伪造的 Kerberos 白银票据 (T1558.002)",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--48e8d8b1-0117-48bd-a32d-f4e43b665bf3": {
+  "name": "滥用信息库进行数据收集",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--80eb76bc-6599-4adf-8d8c-8126e7e63d12": {
+  "name": "跨主机平台持久化痕迹清除的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--5307b508-28e8-44c6-9487-212ccd3ab86c": {
+  "name": "ESXi Hypervisor CLI 滥用的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--119f2b00-82ac-41fb-96ac-728bf56a8a29": {
+  "name": "检测对 Windows 凭据管理器的可疑访问",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--f1f9b6fc-a261-4bcf-a0c0-3ae42cdc28fc": {
+  "name": "通过账户名相似性进行伪装的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--e8d186eb-5450-4dc9-8458-89bbaed45643": {
+  "name": "检测未授权或可疑的硬件添加 (USB/Thunderbolt/网络)",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--834e853c-479d-4ddd-a1a3-349b09466b8d": {
+  "name": "远程桌面软件执行与信标行为检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--27b606f9-dde4-456c-8d90-51289313994f": {
+  "name": "T1505 - 服务器软件组件的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--c54fdf95-c7ac-4ca4-bd99-273e56da20a5": {
+  "name": "通过批量覆写与删除模式检测跨平台数据破坏",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--8bcafe59-0a4b-4314-988b-085bf5cdf7a9": {
+  "name": "T1132.002 数据编码：跨 Windows、Linux、macOS、ESXi 非标准编码的行为链检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--3ac249d7-5e15-47b4-a507-18d94b11de4d": {
+  "name": "检测域控制器认证进程修改 (Skeleton Key)",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--22a31282-d190-449b-a102-2d562f906b7d": {
+  "name": "向云账户传输数据的跨平台检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--a8067c32-46d5-426e-9c1a-e91d360be83d": {
+  "name": "通过 JavaScript Blob + 动态文件投放进行 HTML 走私的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--b865c4e8-f3de-471e-846c-2290b6d52da9": {
+  "name": "检测通过可逆加密修改认证进程",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--72d668ba-f4d1-43ff-b7b1-0dbad9ec6ed9": {
+  "name": "命令混淆的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--b96fce76-6b29-4e1c-b8b1-741f45a89fdc": {
+  "name": "恶意文件删除的行为检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--a070f9d2-3480-4362-99b3-8b36f5be0189": {
+  "name": "路过式攻陷 — 基于行为的多平台检测策略 (T1189)",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--8103189e-83c8-4246-a56c-193e19c98182": {
+  "name": "T1498 – 跨平台网络拒绝服务的行为检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--fda20a62-ad83-4d45-8a65-84883b07707b": {
+  "name": "云管理命令的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--04f3b20d-e208-4ca3-b1e5-9e996013bc8a": {
+  "name": "T1546.016 - 通过安装包实现事件触发执行的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--ca916010-7f72-4132-ad7c-44967d479dcc": {
+  "name": "IP 段扫描的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--481a55d3-5f23-4428-9438-0220eab78678": {
+  "name": "模板注入检测 - Windows",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--be6a466c-40c6-4611-9b68-7cfcbcb35fb0": {
+  "name": "启动或登录初始化脚本：RC 脚本的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--774bbba8-45c2-403d-a445-3a64b3679faf": {
+  "name": "Windows 上 T1134 访问令牌操纵的行为链检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--6df13a5a-7d2b-4c9d-8c6e-d57ca850fe15": {
+  "name": "通过输入捕获与智能卡代理拦截 MFA 的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--7a182af0-a7e1-41a1-ae5e-ac76ff7f5948": {
+  "name": "通过行为模式检测混淆二进制解包",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--427d7e41-293a-4616-aec7-d5eea56431d0": {
+  "name": "Serverless 的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--e6496b9b-2458-4616-9712-a7c0da7fd3bc": {
+  "name": "基于 Web 协议经 HTTP、HTTPS 或 WebSockets 的 C2 检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--4a7f1bc4-4396-49e1-9c75-caa6ecd64047": {
+  "name": "Visual Basic 执行 (VBS/VBA/VBScript) 的行为检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--82c31276-f916-4d67-be83-f09534c0c77e": {
+  "name": "隐藏文件系统滥用的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--3c335443-c161-4149-9c85-d7a014550099": {
+  "name": "Linux 上 Systemd 服务创建或修改的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--1d8154f6-6890-4441-863f-007600867088": {
+  "name": "独占控制的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--2729a43c-3f8d-4fee-b2bd-f773436d051b": {
+  "name": "RDP 远程服务会话劫持的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--552bacaa-9df5-4c95-83de-a7d1948003b5": {
+  "name": "T1136 - 跨平台创建账户的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--c265ea42-9c5a-41f0-9627-d7ac0063ec98": {
+  "name": "T1547.013 - XDG 自启动项的 Linux 检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--6bf8b26d-aa2d-4a8f-a1e4-c9cc4aef318d": {
+  "name": "服务器的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--a9351ea0-8379-47cd-a5c5-c5cf424249ef": {
+  "name": "云服务发现的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--0dabfa5e-9c35-48ec-b825-ff1cce7a3d00": {
+  "name": "用户执行 – 恶意复制粘贴（浏览器/邮件 → 带混淆单行命令的 shell）– T1204.004",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--9ec6dafe-3e93-4ebb-943e-26b84136f6a9": {
+  "name": "远程系统枚举行为的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--82e20b1f-300e-43cc-9259-1d506ef5d1f8": {
+  "name": "跨平台网络服务发现的行为检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--bcc3656b-82bf-44d7-a4e8-c5da5ce2e7ab": {
+  "name": "域属性的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--f18dee58-43be-41e4-85a3-c6820033ac0d": {
+  "name": "多平台软件发现行为链",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--e2bf0a76-b5e4-4a23-adbb-024454f5dbdc": {
+  "name": "通过基于 GUI 的云访问检测云服务仪表板使用",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--a14db1ea-e57e-4bc4-83bb-94a6e7da87b0": {
+  "name": "通过 PE 内存修改与镂空进行 TLS 回调注入的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--22f3a380-389d-44f7-a846-c6223fc06ddd": {
+  "name": "调试器规避 (T1622) 的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--16462629-5b36-4bb6-a565-de4df01f75d4": {
+  "name": "文件名后加空格伪装 - 行为检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--5ac0e527-2ebd-44a1-8d87-4de8463b761c": {
+  "name": "检测通过修改重开应用 plist 实现持久化 (macOS)",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--3d06c5c3-ace1-4eff-98cd-2ddc95474f66": {
+  "name": "SEO 投毒的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--5692084b-878d-44f7-8b38-a3d125894845": {
+  "name": "T1550.002 - 哈希传递 (Windows) 的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--7ac4c58e-73de-4da1-8fc3-c2ccc511d884": {
+  "name": "通过可移动介质进行数据外泄的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--67677c4c-5778-49eb-ae74-1920645b8554": {
+  "name": "通过行为链检测入站工具传输",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--ba3578d1-5913-4ed1-ab83-473a39b63f7d": {
+  "name": "通过滥用 SyncAppvPublishingServer.vbs 代理检测 PowerShell 执行",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--679edb0f-4fa0-4929-9ffd-881d9f82263d": {
+  "name": "添加邮件代理权限的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--1e8c8a62-9546-4323-a561-83e9fad94fa0": {
+  "name": "代码签名证书的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--7a848f8f-4bdc-426c-989e-bc1abfaeb7fa": {
+  "name": "Serverless 执行 (T1648) 的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--f1fdcaa2-7040-4cea-a934-7397566a312b": {
+  "name": "通过 Launchctl 与未受保护的 SIP 操纵 TCC 数据库",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--ded7322c-64ba-4f6b-9aca-77a537798cab": {
+  "name": "不可见 Unicode 的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--c2768ab6-522f-4b88-b3f7-a30230208ceb": {
+  "name": "Linux 上基于 Ptrace 的进程注入检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--40701244-5af5-477f-a9a7-ba661907f318": {
+  "name": "电源设置滥用的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--063eac3f-9c2a-429a-ad7c-ae7f49158bb2": {
+  "name": "通过基于哈希的函数查找进行动态 API 解析的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--722d2e3d-c3ad-4878-bcef-ca3161465342": {
+  "name": "基于 RDP 的远程登录与访问后活动的多事件检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--3f27e858-2912-4b43-ac03-f668ef30c47e": {
+  "name": "检测登录脚本修改与执行",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--175b97d9-287e-4ab6-ae95-8652c224f02a": {
+  "name": "Windows 上 ListPlanting 注入的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--ba2efedb-2670-4072-b56f-8f12daa31923": {
+  "name": "隐藏基础设施的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--3eb428c7-5192-4ae2-a5a3-022ca9695ec8": {
+  "name": "通过 AD 与身份提供程序检测域或租户策略修改",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--4994627c-216b-4832-90cf-074d3e9013e4": {
+  "name": "通过 msxsl 与 wmic 检测 XSL 脚本滥用",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--fa1f7635-b4a2-4a2b-87ae-50cb4dbee328": {
+  "name": "数据库扫描的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--3f59957a-2e55-4378-bbe7-090fb1e4f067": {
+  "name": "隐藏文件与目录的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--160f132d-626e-412a-ae16-df265670c196": {
+  "name": "修改云计算基础设施：创建快照的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--59dd7be2-7f37-4b8c-a1a7-3ed71d37cac8": {
+  "name": "确定物理位置的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--cb0a01e5-d88a-4ac8-a70a-1472c5dccd10": {
+  "name": "检测通过 Office 测试注册表 DLL 注入实现持久化",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--7ad9b54d-cd23-4ec3-a5b2-db5e58e82a02": {
+  "name": "开发能力的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--a97fe87f-e9be-4f71-8530-af5d70eaddf3": {
+  "name": "从域控制器转储 NTDS.dit 凭据的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--1221d0cb-6404-4fe7-837e-6057a96e7acb": {
+  "name": "禁用或修改云防火墙的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--2dc6a789-2dd7-4d64-be82-73db6fc3fb70": {
+  "name": "网络设备上 SNMP (MIB 转储) 的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--acb9a314-aa08-4a0f-b3ba-201d87fa4cc8": {
+  "name": "跨操作系统平台系统防火墙被禁用或修改的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--0aa86929-f232-4fa7-bdc9-120f917a3509": {
+  "name": "通过文件 + 网络关联检测隐写命令与控制",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--b977bf63-8fe2-4538-b4f2-0098fe26d67b": {
+  "name": "用户执行 – 恶意链接（点击 → 可疑出站 → 下载/写入 → 后续活动）",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--afdf49f9-905d-49e4-9e42-5726f35e87e4": {
+  "name": "使用替代认证材料：应用程序访问令牌 (T1550.001) 的行为检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--fbac07bf-65d5-4222-88bb-0ef798417ebb": {
+  "name": "检测通过滥用 LSA 插件实现未授权 LSASS 驱动持久化 (Windows)",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--ef1996dc-b6e9-4d8b-a216-77d14323b3e5": {
+  "name": "系统服务：服务执行的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--a1a9e316-145a-4744-a594-7decc23c543d": {
+  "name": "被滥用或攻陷的云账户用于访问与持久化的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--a59f4a44-d581-4026-802d-5dc5c0c9f7d5": {
+  "name": "环境密钥从发现到解密的行为链检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--ee1c44c9-c5aa-4a9c-9e68-49854ed4d602": {
+  "name": "回退或备用 C2 通道的行为检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--8c3d7757-f3ab-4c1d-95e1-f712cdecd5a3": {
+  "name": "通过驱动器枚举与文件系统探测进行本地存储发现",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--08f7fa2b-13f3-4348-83b8-023c2a68493f": {
+  "name": "NTFS 文件属性滥用 (ADS/EAs) 的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--f1fe6286-1f54-4dfc-b96a-31b10711e4b1": {
+  "name": "检测 Kerberoasting 尝试 (T1558.003)",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--3796aa06-65fe-4b9d-9d31-e6491b722632": {
+  "name": "通过滥用复制 API 检测未授权 DCSync 操作",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--98ae5e06-7ea5-49b9-b793-7f97b1d306b2": {
+  "name": "T1124 系统时间发现的行为链、平台感知检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--ca20fecb-6b8e-49ae-9ecf-19f4edd812ad": {
+  "name": "通过 `at` 工具滥用计划任务/作业的跨平台检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--e9c54806-2d8e-4722-805c-4a1e7f6a1986": {
+  "name": "通过 Windows API 进行 DLL 注入的行为检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--c328d67c-f6e3-491b-9e1c-92f651c15c98": {
+  "name": "漏洞利用的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--d51dd574-9171-4c46-89bc-0e3bb1178dfe": {
+  "name": "跨平台认证进程修改的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--408fb023-a9d7-473c-8db8-a7d3c66eded7": {
+  "name": "T1546.017 - Udev 规则 (Linux) 的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--d918611a-9d07-4f8b-b70e-2fe1c2f75faf": {
+  "name": "通过 API 钩子进行凭据收集的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--ab9027fb-3499-474b-845c-50ee113c3be5": {
+  "name": "通过刷写工具或损坏固件上传进行固件修改",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--b13116ed-e9c0-4cd5-81f6-676074078477": {
+  "name": "T1490 - 抑制系统恢复的行为检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--8d407bff-f721-4b74-a593-1e55c14c5263": {
+  "name": "通过注册表与子进程监控检测 Netsh 助手 DLL 持久化 (Windows)",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--dd232215-bb7f-461f-ac3f-e7cf5612e396": {
+  "name": "跨操作系统平台通过服务进行鱼叉式钓鱼的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--28630b41-d28f-4414-afc8-23cc9ce8696c": {
+  "name": "通过横向主机到主机 C2 中继的内部代理行为",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--8ac2b0d0-a589-4c72-9287-a7d9e47065a9": {
+  "name": "通过已签名 Microsoft 工具进行基于脚本的代理执行检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--70abbe3f-797d-495b-8f76-371408a0f929": {
+  "name": "Web 服务：死信箱解析器 (Dead Drop Resolver) 的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--bb40d0a9-b35b-4adc-8a69-a3002d53f5f7": {
+  "name": "通过行为分析检测 C2 通道中的垃圾数据",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--16e7016e-ce95-4eca-b340-ff158949d11d": {
+  "name": "鱼叉式钓鱼服务的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--000d7b6f-0bb5-4144-a3eb-1aa822433da1": {
+  "name": "检测滥用 vSphere 安装包 (VIB) 实现持久访问",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--8ca072de-1c09-4e19-acd2-e4228681030c": {
+  "name": "检测滥用容器 API 获取凭据",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--dce8edf3-894f-4857-8f85-04db84bcebd9": {
+  "name": "域的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--101bde37-6150-45c6-bf88-3a8cda39b2f0": {
+  "name": "T1505.001 SQL 存储过程滥用的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--8a9ce0df-e256-4739-8db5-3e850e102e48": {
+  "name": "检测通过打过补丁的系统镜像修改网络设备认证",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--3a016ed2-47e0-414b-b90e-a44d1437354e": {
+  "name": "通过直接访问与覆写进行磁盘内容擦除的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--c69d915c-0cbf-479e-b0b5-bebd7eb7e728": {
+  "name": "检测 SaaS 与 Office 环境中对消息应用的未授权收集",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--a772e6e0-017e-4ceb-b125-4620ac85a5bd": {
+  "name": "经未加密非 C2 协议外泄的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--f3d5d1d5-3d80-46b2-be05-f0c438625230": {
+  "name": "压缩载荷创建与执行的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--eca47fcc-6bee-43b1-9569-631a22be5fe0": {
+  "name": "劫持执行流程：Dylib 劫持的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--524a2282-e312-4707-82d1-2c34f015c85c": {
+  "name": "降级网络设备系统镜像的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--6dec9c28-6dcb-4470-ad69-6cdb520adb53": {
+  "name": "电子邮件欺骗的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--b045b89e-3095-41c3-a04d-d40075f14cd8": {
+  "name": "本地账户滥用用于初始访问与持久化的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--f9c29db2-8790-4255-957f-9a02f1d8d024": {
+  "name": "Wi-Fi 网络的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--da1e3af8-d79b-44ff-a907-ae107c110671": {
+  "name": "以隐匿为目的的漏洞利用检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--f47cb8dc-2120-4541-9306-95053218ba8a": {
+  "name": "T1127 受信开发者工具代理执行 (Windows) 的行为链、平台感知检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--2a464ecb-46ef-41f0-8ab6-a97a99ad0559": {
+  "name": "通过执行与主机状态事件进行多平台关机或重启检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--f4560945-d62f-48b6-ae94-dcd93c471c45": {
+  "name": "检测 MMC (.msc) 代理执行与恶意 COM 激活",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--276ac500-e134-4852-96cd-8aa899ad0c7c": {
+  "name": "Windows 进程参数欺骗的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--8276f61b-0147-4e72-94fb-7cdd47dc60ec": {
+  "name": "利用 Windows COR_PROFILER 劫持执行流程的检测策略",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--832681d0-1369-4915-a7b4-6627d7205a67": {
+  "name": "反自动化规避的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--cbb2c861-8f0c-45ac-9005-4346e2ff6617": {
+  "name": "可疑获取与使用应用专用密码",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--93aad346-455d-4de1-ae61-b11fd5456263": {
+  "name": "AI 结果投毒的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--b91d85aa-d207-407e-b3dd-3adc4ed8fab0": {
+  "name": "自动化验证码识别的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--211b4197-345a-4776-8391-0c368eb534e2": {
+  "name": "绕过验证码的检测",
+  "description": ""
+ },
+ "x-mitre-detection-strategy--0567c079-3df3-404a-b69d-1690efd638b4": {
+  "name": "检测利用 AI 的数据外泄",
+  "description": ""
+ }
+}
