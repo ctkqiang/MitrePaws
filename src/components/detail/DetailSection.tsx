@@ -13,6 +13,7 @@ import { Platform, StyleSheet, Text, View, type ViewStyle } from 'react-native';
 
 import { LinearGradient } from 'expo-linear-gradient';
 
+import { AnimatedEntrance } from '@/components/AnimatedEntrance';
 import { useTheme } from '@/hooks/use-theme';
 import { Gradients, Radius, Spacing } from '@/theme/tokens';
 
@@ -24,6 +25,8 @@ export type DetailSectionProps = {
   children: ReactNode;
   /** 是否为 Hero 卡（概述）：深色主题下底色抬升，浅色主题下附极轻投影。 */
   hero?: boolean;
+  /** 入场动画延迟（毫秒）；传入后整节以「轻轻落下」方式入场。 */
+  entranceDelay?: number;
 };
 
 /**
@@ -31,9 +34,9 @@ export type DetailSectionProps = {
  *
  * @param props - 见 {@link DetailSectionProps}。
  */
-export function DetailSection({ title, children, hero = false }: DetailSectionProps) {
+export function DetailSection({ title, children, hero = false, entranceDelay }: DetailSectionProps) {
   const theme = useTheme();
-  return (
+  const card = (
     <View
       style={[
         styles.card,
@@ -55,6 +58,15 @@ export function DetailSection({ title, children, hero = false }: DetailSectionPr
       </View>
       {children}
     </View>
+  );
+
+  if (entranceDelay === undefined) {
+    return card;
+  }
+  return (
+    <AnimatedEntrance delay={entranceDelay} offset={14} scaleFrom={0.98}>
+      {card}
+    </AnimatedEntrance>
   );
 }
 
