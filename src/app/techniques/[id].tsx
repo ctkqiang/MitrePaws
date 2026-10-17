@@ -29,6 +29,7 @@ import { haptics } from '@/services/haptics';
 import { useLocaleStore } from '@/stores/localeStore';
 import { Gradients, Radius, Spacing } from '@/theme/tokens';
 import type { BilingualText as BilingualTextValue, Locale } from '@/types/stix';
+import { pickLocaleText } from '@/types/viewData';
 import { useTechniqueDetailViewModel } from '@/viewmodels/useTechniqueDetailViewModel';
 
 /** 中性芯片行属性 — 平台 / CAPEC 这类短枚举值的展示载体。 */
@@ -224,17 +225,18 @@ export default function TechniqueDetailScreen() {
         <DetailSection title={t('detail.sections.overview')} hero>
           <BilingualText text={data.description} style={[styles.body, { color: theme.text }]} />
         </DetailSection>
+      </AnimatedEntrance>
 
-        {/* 检测 */}
-        {data.detection && (
-          <DetailSection title={t('detail.sections.detection')}>
-            <BilingualText text={data.detection} style={[styles.body, { color: theme.text }]} />
-          </DetailSection>
-        )}
+      {/* 检测 */}
+      {data.detection && (
+        <DetailSection title={t('detail.sections.detection')} entranceDelay={40}>
+          <BilingualText text={data.detection} style={[styles.body, { color: theme.text }]} />
+        </DetailSection>
+      )}
 
-        {/* 检测策略 — 含分析项与日志源 */}
-        {data.detectionStrategies.length > 0 && (
-          <DetailSection title={t('detail.sections.detectionStrategies')}>
+      {/* 检测策略 — 含分析项与日志源 */}
+      {data.detectionStrategies.length > 0 && (
+        <DetailSection title={t('detail.sections.detectionStrategies')} entranceDelay={80}>
             <View style={styles.itemList}>
               {data.detectionStrategies.map((strategy) => (
                 <View
@@ -247,14 +249,13 @@ export default function TechniqueDetailScreen() {
                     <Text style={[styles.strategyId, { color: theme.accent }]}>
                       {shortStrategyId(strategy.id)}
                     </Text>
-                    <Text style={[styles.strategyName, { color: theme.text }]}>
-                      {strategy.name}
-                    </Text>
+                    <BilingualText text={strategy.name} style={[styles.strategyName, { color: theme.text }]} />
                   </View>
-                  {strategy.description !== '' && (
-                    <Text style={[styles.nestedBody, { color: theme.textSecondary }]}>
-                      {strategy.description}
-                    </Text>
+                  {strategy.description.en !== '' && (
+                    <BilingualText
+                      text={strategy.description}
+                      style={[styles.nestedBody, { color: theme.textSecondary }]}
+                    />
                   )}
                   {strategy.analytics.map((analytic) => (
                     <View
@@ -266,13 +267,12 @@ export default function TechniqueDetailScreen() {
                       <Text style={[styles.nestedLabel, { color: theme.textSecondary }]}>
                         {t('detail.strategy.analytics')}
                       </Text>
-                      <Text style={[styles.analyticName, { color: theme.text }]}>
-                        {analytic.name}
-                      </Text>
-                      {analytic.description !== '' && (
-                        <Text style={[styles.nestedBody, { color: theme.textSecondary }]}>
-                          {analytic.description}
-                        </Text>
+                      <BilingualText text={analytic.name} style={[styles.analyticName, { color: theme.text }]} />
+                      {analytic.description.en !== '' && (
+                        <BilingualText
+                          text={analytic.description}
+                          style={[styles.nestedBody, { color: theme.textSecondary }]}
+                        />
                       )}
                       {analytic.platforms.length > 0 && (
                         <Text style={[styles.analyticPlatforms, { color: theme.textSecondary }]}>
@@ -285,15 +285,18 @@ export default function TechniqueDetailScreen() {
                             {t('detail.strategy.logSources')}
                           </Text>
                           <View style={styles.tagWrap}>
-                            {analytic.logSources.map((ls, idx) => (
-                              <View
-                                key={`${ls.name}-${idx}`}
-                                style={[styles.tag, { backgroundColor: theme.accentSoft }]}>
-                                <Text style={[styles.tagText, { color: theme.accent }]}>
-                                  {ls.channel ? `${ls.name}: ${ls.channel}` : ls.name}
-                                </Text>
-                              </View>
-                            ))}
+                            {analytic.logSources.map((ls, idx) => {
+                              const lsName = pickLocaleText(ls.name, locale);
+                              return (
+                                <View
+                                  key={`${ls.name.en}-${idx}`}
+                                  style={[styles.tag, { backgroundColor: theme.accentSoft }]}>
+                                  <Text style={[styles.tagText, { color: theme.accent }]}>
+                                    {ls.channel ? `${lsName}: ${ls.channel}` : lsName}
+                                  </Text>
+                                </View>
+                              );
+                            })}
                           </View>
                         </>
                       )}
@@ -306,12 +309,12 @@ export default function TechniqueDetailScreen() {
         )}
 
         {/* 平台 */}
-        <DetailSection title={t('detail.sections.platforms')}>
+        <DetailSection title={t('detail.sections.platforms')} entranceDelay={120}>
           <ChipRow labels={data.platforms} tone="neutral" />
         </DetailSection>
 
         {/* 战术 */}
-        <DetailSection title={t('detail.sections.tactics')}>
+        <DetailSection title={t('detail.sections.tactics')} entranceDelay={160}>
           <View style={styles.chipWrap}>
             {data.tactics.map((ta) => (
               <RelationshipChip key={ta.externalId} externalId={ta.externalId} name={ta.name} kind="tactic" />
@@ -321,7 +324,7 @@ export default function TechniqueDetailScreen() {
 
         {/* 父技术 */}
         {data.parent && (
-          <DetailSection title={t('detail.sections.parent')}>
+          <DetailSection title={t('detail.sections.parent')} entranceDelay={200}>
             <RelationshipChip
               externalId={data.parent.externalId}
               name={data.parent.name}
@@ -338,7 +341,7 @@ export default function TechniqueDetailScreen() {
 
         {/* 子技术 */}
         {data.subtechniques.length > 0 && (
-          <DetailSection title={t('detail.sections.subtechniques')}>
+          <DetailSection title={t('detail.sections.subtechniques')} entranceDelay={240}>
             <View style={styles.chipWrap}>
               {data.subtechniques.map((sub) => (
                 <RelationshipChip
@@ -360,7 +363,7 @@ export default function TechniqueDetailScreen() {
 
         {/* 使用方 */}
         {data.usedBy.length > 0 && (
-          <DetailSection title={t('detail.sections.usedBy')}>
+          <DetailSection title={t('detail.sections.usedBy')} entranceDelay={280}>
             <View style={styles.chipWrap}>
               {data.usedBy.map((u) => (
                 <RelationshipChip
@@ -376,7 +379,7 @@ export default function TechniqueDetailScreen() {
 
         {/* 攻击过程示例（Procedure Examples — 使用中的软件/组织） */}
         {data.procedureExamples.length > 0 && (
-          <DetailSection title={t('detail.sections.procedureExamples')}>
+          <DetailSection title={t('detail.sections.procedureExamples')} entranceDelay={320}>
             <View style={styles.itemList}>
               {data.procedureExamples.map((pe, index) => (
                 <View
@@ -397,7 +400,7 @@ export default function TechniqueDetailScreen() {
 
         {/* 缓解措施 */}
         {data.mitigations.length > 0 && (
-          <DetailSection title={t('detail.sections.mitigations')}>
+          <DetailSection title={t('detail.sections.mitigations')} entranceDelay={360}>
             <View style={styles.chipWrap}>
               {data.mitigations.map((m) => (
                 <RelationshipChip
@@ -413,7 +416,7 @@ export default function TechniqueDetailScreen() {
 
         {/* 数据源 */}
         {data.dataComponents.length > 0 && (
-          <DetailSection title={t('detail.sections.dataSources')}>
+          <DetailSection title={t('detail.sections.dataSources')} entranceDelay={400}>
             <ChipRow
               tone="accent"
               labels={data.dataComponents.map((dc) =>
@@ -425,13 +428,13 @@ export default function TechniqueDetailScreen() {
 
         {/* CAPEC 关联 */}
         {data.capecIds.length > 0 && (
-          <DetailSection title={t('detail.sections.capec')}>
+          <DetailSection title={t('detail.sections.capec')} entranceDelay={440}>
             <ChipRow labels={data.capecIds} tone="accent" />
           </DetailSection>
         )}
 
         {/* 元信息 — 版本 / 时间 / 远程支持 / 影响类型 / 贡献者 */}
-        <DetailSection title={t('detail.sections.metadata')}>
+        <DetailSection title={t('detail.sections.metadata')} entranceDelay={480}>
           <View style={styles.metadataList}>
             {data.version && (
               <MetadataRow label={t('detail.metadata.version')} value={data.version} />
@@ -475,7 +478,7 @@ export default function TechniqueDetailScreen() {
 
         {/* 外部引用 */}
         {data.references.length > 0 && (
-          <DetailSection title={t('detail.sections.references')}>
+          <DetailSection title={t('detail.sections.references')} entranceDelay={520}>
             <View style={styles.itemList}>
               {data.references.map((ref, index) => (
                 <PressableScale
@@ -508,7 +511,6 @@ export default function TechniqueDetailScreen() {
             </View>
           </DetailSection>
         )}
-      </AnimatedEntrance>
     </ScreenScaffold>
   );
 }
