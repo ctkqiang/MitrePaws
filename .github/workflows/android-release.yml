@@ -1,0 +1,121 @@
+# Android Release CI — GitHub Actions 流水线。
+#
+# 触发方式：
+#   1. 推送 v* 格式标签（如 v1.0.0）→ 以该标签创建 GitHub Release。
+#   2. 手动 workflow_dispatch → 自动从 app.json 读取版本号并创建 v{version} 标签。
+#
+# 构建链路：npm ci → expo prebuild 生成原生 android/ 工程 → 注入签名配置 →
+# gradlew assembleRelease 打出 APK → 附加到 GitHub Release。
+#
+# 签名策略（无需 EAS，全部在 runner 上完成）：
+#   - 若仓库配置了 ANDROID_KEYSTORE_BASE64 / ANDROID_KEYSTORE_PASSWORD /
+#     ANDROID_KEY_ALIAS / ANDROID_KEY_PASSWORD 四个 Secrets，使用正式密钥签名；
+#   - 否则用 keytool 生成临时自签名密钥，产物可安装可测试，但跨版本升级安装
+#     会因签名不一致失败——正式发布前务必配置正式密钥 Secrets。
+
+name: Android Release
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: android-release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # RN 0.86 的 AGP 8.x 要求 JDK 17+；如后续 Expo 升级提高下限，改这里即可
+      - name: Setup JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Setup Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      # Gradle 依赖缓存以 package-lock 为指纹；首次运行无缓存属正常
+      - name: Cache Gradle
+        uses: actions/cache@v4
+        with:
+          path: ~/.gradle/caches
+          key: gradle-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+          restore-keys: gradle-${{ runner.os }}-
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate native Android project
+        run: npx expo prebuild --platform android --clean --no-install
+
+      - name: Configure signing
+        env:
+          KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: |
+          if [ -n "$KEYSTORE_BASE64" ]; then
+            echo "$KEYSTORE_BASE64" | base64 --decode > "$RUNNER_TEMP/release.keystore"
+            STORE="$RUNNER_TEMP/release.keystore"
+          else
+            STORE="$RUNNER_TEMP/ephemeral.keystore"
+            keytool -genkeypair -v \
+              -keystore "$STORE" \
+              -alias mitrepaws \
+              -keyalg RSA -keysize 2048 -validity 10000 \
+              -storepass mitrepaws -keypass mitrepaws \
+              -dname "CN=MitrePaws, OU=Development, O=ctkqiang, C=CN"
+            KEYSTORE_PASSWORD=mitrepaws
+            KEY_ALIAS=mitrepaws
+            KEY_PASSWORD=mitrepaws
+            echo "::warning::未检测到签名密钥 Secrets，本次 APK 使用 CI 临时密钥签名，仅适合测试安装"
+          fi
+          # AGP 注入式签名属性：对 release 变体自动生效，无需改动 prebuild 产物
+          {
+            echo "android.injected.signing.store.file=$STORE"
+            echo "android.injected.signing.store.password=$KEYSTORE_PASSWORD"
+            echo "android.injected.signing.key.alias=$KEY_ALIAS"
+            echo "android.injected.signing.key.password=$KEY_PASSWORD"
+          } >> android/gradle.properties
+
+      - name: Build release APK
+        run: cd android && ./gradlew assembleRelease --no-daemon
+
+      - name: Read app version
+        id: version
+        run: echo "version=$(node -p "require('./app.json').expo.version")" >> "$GITHUB_OUTPUT"
+
+      - name: Prepare APK artifact
+        run: |
+          mkdir -p dist
+          APK=$(find android/app/build/outputs/apk/release -name '*.apk' | head -n 1)
+          cp "$APK" "dist/MitrePaws-v${{ steps.version.outputs.version }}.apk"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_type == 'tag' && github.ref_name || format('v{0}', steps.version.outputs.version) }}
+          name: MitrePaws v${{ steps.version.outputs.version }}
+          files: dist/*.apk
+          generate_release_notes: true
+          body: |
+            MitrePaws v${{ steps.version.outputs.version }} Android 安装包（APK）。
+
+            - 包名：`xin.ctkqiang.mitrepaw`
+            - 全量离线运行，安装后无需任何网络权限即可使用
+            - 若未配置正式签名密钥，本 APK 由 CI 临时密钥签名，仅供测试；跨版本升级安装请先卸载旧版
