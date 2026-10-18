@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 字节跳动风格红青渐变 -->
+    <linearGradient id="pawGradient" x1="0%" y1="0%" x2="100%" y2="100%" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF2E4C"/>
+      <stop offset="50%" stop-color="#B845FF"/>
+      <stop offset="100%" stop-color="#00F0FF"/>
+    </linearGradient>
+
+    <!-- 霓虹光晕滤镜 -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- 六边形网格纹理 -->
+    <pattern id="hexPattern" width="40" height="34.64" patternUnits="userSpaceOnUse">
+      <path d="M20 0 L40 8.66 L40 25.98 L20 34.64 L0 25.98 L0 8.66 Z" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+    </pattern>
+
+    <!-- 深空背景渐变 -->
+    <radialGradient id="bgGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1A1F3A"/>
+      <stop offset="100%" stop-color="#0A0E27"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 深空背景 -->
+  <rect width="1024" height="1024" rx="220" fill="url(#bgGradient)"/>
+
+  <!-- 背景六边形网格（装饰） -->
+  <g opacity="0.3">
+    <rect width="1024" height="1024" fill="url(#hexPattern)"/>
+  </g>
+
+  <!-- 猫爪主体组（应用光晕） -->
+  <g filter="url(#neonGlow)">
+    <!-- 掌垫（大椭圆形，底部） -->
+    <ellipse cx="512" cy="680" rx="180" ry="140" fill="url(#pawGradient)" opacity="0.95"/>
+
+    <!-- 趾垫 1（左上） -->
+    <ellipse cx="360" cy="480" rx="75" ry="90" fill="url(#pawGradient)" opacity="0.95"/>
+
+    <!-- 趾垫 2（右上） -->
+    <ellipse cx="664" cy="480" rx="75" ry="90" fill="url(#pawGradient)" opacity="0.95"/>
+
+    <!-- 趾垫 3（左中） -->
+    <ellipse cx="280" cy="600" rx="65" ry="80" fill="url(#pawGradient)" opacity="0.95"/>
+
+    <!-- 趾垫 4（右中） -->
+    <ellipse cx="744" cy="600" rx="65" ry="80" fill="url(#pawGradient)" opacity="0.95"/>
+  </g>
+
+  <!-- 内部六边形纹理层（叠加在爪印上） -->
+  <g opacity="0.2">
+    <!-- 掌垫纹理 -->
+    <ellipse cx="512" cy="680" rx="160" ry="120" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2" stroke-dasharray="8 4"/>
+
+    <!-- 趾垫纹理 -->
+    <ellipse cx="360" cy="480" rx="55" ry="70" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-dasharray="6 3"/>
+    <ellipse cx="664" cy="480" rx="55" ry="70" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-dasharray="6 3"/>
+    <ellipse cx="280" cy="600" rx="45" ry="60" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-dasharray="6 3"/>
+    <ellipse cx="744" cy="600" rx="45" ry="60" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-dasharray="6 3"/>
+  </g>
+
+  <!-- 中心高光点（增加立体感） -->
+  <ellipse cx="512" cy="640" rx="60" ry="40" fill="rgba(255,255,255,0.15)"/>
+</svg>
